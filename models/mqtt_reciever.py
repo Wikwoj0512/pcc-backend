@@ -4,6 +4,7 @@ import time
 
 import paho.mqtt.client as mqtt
 
+
 from .session import Session
 from utils import js_long_to_date, DataPoint, parse_dict
 
@@ -35,8 +36,12 @@ class MqttReciever:
         t = threading.Thread(target=self.client.loop_forever)
         t.start()
 
-    def recieve_message(self, client, userdata, msg):
-        message = json.loads(msg.payload)
+    def recieve_message(self, _client, _userdata, msg):
+        try:
+            message = json.loads(msg.payload)
+        except Exception as e:
+            print(f"Failed to decode message, exception: {e}")
+            return
         header = message.get('header')
         if not header:
             return
