@@ -4,14 +4,15 @@ import time
 
 import paho.mqtt.client as mqtt
 
-
 from .session import Session
 from utils import js_long_to_date, DataPoint, parse_dict
 
 
 class MqttReciever:
-    def __init__(self, host='localhost', port=1883, topic='pcc_in'):
+    def __init__(self, config='config.json', host='localhost', port=1883, topic='pcc_in'):
 
+        with open(config) as f:
+            self.config = json.loads(f.read())
         self.client = mqtt.Client()
 
         self.topics = []
@@ -40,7 +41,7 @@ class MqttReciever:
         try:
             message = json.loads(msg.payload)
         except Exception as e:
-            print(f"Failed to decode message, exception: {e}")
+            print(f"Failed to decode message, exception: {e}, message: {msg.payload}")
             return
         header = message.get('header')
         if not header:
@@ -72,14 +73,21 @@ class MqttReciever:
             self.data[origin][key].append(DataPoint(timestamp, value))
 
     def get_origns(self):
-        return [{"origin": origin, 'keys': list(v.keys())} for (origin, v) in self.data.items()]
+        ret_list = []
+        for (origin, v) in self.data.items():
+            display_name = str(origin)
+            try:
+                origin_config = self.config.get('origins', {}).get(display_name, {})
+                display_name = origin_config.get('displayName', display_name)
+                ret_keys = []
+                keys = origin_config.get('keys', {})
+                for key in v.keys():
+                    ret_keys.append({"key": key, "displayName": keys.get(key, key)})
+                ret_list.append({"origin": {"name": origin, "displayName": display_name}, "keys": ret_keys})
+            except Exception as e:
+                print(f"failed to find display_name for {origin}: {e}")
 
-    def get_keys(self, origin):
-        origin = self.data.get(origin)
-        if origin is None:
-            return {'error': f'no data for origin {origin}'}
-
-        return list(origin.keys())
+        return ret_list
 
     def create_session(self, session_name):
         self.sessions[session_name] = Session(session_name)

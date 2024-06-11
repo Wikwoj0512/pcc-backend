@@ -14,7 +14,7 @@ class Session:
 
     def configure(self, data):
         self.fields = []
-        for el in data:
+        for el in data.get("keys", []):
             if not el:
                 continue
             origin = el.get('origin')
@@ -25,6 +25,14 @@ class Session:
                 if not isinstance(key, str):
                     return "Wrong request structure {origin: string, keys: string[]}[]"
             self.fields.append({'origin': origin, 'keys': keys})
+        try:
+            self.timeframe = int(data.get("timestamp", self.timeframe))
+        except Exception as e:
+            print(f"Failed to set timeframe for data {data}: {e}")
+        try:
+            self.points = int(data.get("points", self.points))
+        except Exception as e:
+            print(f"Failed to set points for data {data}: {e}")
         return None
 
     def get_points(self, data):

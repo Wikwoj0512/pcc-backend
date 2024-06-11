@@ -9,7 +9,7 @@ from flask_cors import CORS, cross_origin
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'secret!'
-socketio = SocketIO(app, cors_allowed_origins=['http://localhost:5173'], async_mode='threading')
+socketio = SocketIO(app, cors_awlloed_origins=['http://localhost:5173'], async_mode='threading')
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
