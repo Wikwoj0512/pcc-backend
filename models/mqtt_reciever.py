@@ -83,7 +83,7 @@ class MqttReciever:
                 keys = origin_config.get('keys', {})
                 for key in v.keys():
                     ret_keys.append({"key": key, "displayName": keys.get(key, key)})
-                ret_list.append({"origin": {"name": origin, "displayName": display_name}, "keys": ret_keys})
+                ret_list.append({"name": origin, "displayName": display_name, "keys": ret_keys})
             except Exception as e:
                 print(f"failed to find display_name for {origin}: {e}")
 

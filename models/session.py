@@ -14,7 +14,7 @@ class Session:
 
     def configure(self, data):
         self.fields = []
-        for el in data.get("keys", []):
+        for el in data.get("data", []):
             if not el:
                 continue
             origin = el.get('origin')
@@ -26,7 +26,7 @@ class Session:
                     return "Wrong request structure {origin: string, keys: string[]}[]"
             self.fields.append({'origin': origin, 'keys': keys})
         try:
-            self.timeframe = int(data.get("timestamp", self.timeframe))
+            self.timeframe = float(data.get("timeframe", self.timeframe))
         except Exception as e:
             print(f"Failed to set timeframe for data {data}: {e}")
         try:
