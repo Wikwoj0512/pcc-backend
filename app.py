@@ -39,7 +39,10 @@ def get_origins():
 @socketio.on('configure')
 def my_event(data):
     session = reciever.get_session(request.sid)
-    session.configure(data)
+    try:
+        session.configure(data)
+    except Exception as e:
+        print(e)
 
 @socketio.on('connect')
 def my_connect():

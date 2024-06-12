@@ -50,6 +50,7 @@ class MqttReciever:
 
         data = message.get('data')
         if data is None or origin is None: return
+        origin = str(origin)
 
         timestamp = header.get('timestamp')
         if not timestamp: return

@@ -20,7 +20,7 @@ class Session:
             for origin, keys in origins.items():
                 if not isinstance(keys, list):
                     continue
-                if not isinstance(origin, int):
+                if not isinstance(origin, str):
                     continue
                 fields.append({'origin': origin, 'keys': keys})
             self.fields = fields
