@@ -1,6 +1,5 @@
 import json
 import threading
-import time
 
 import paho.mqtt.client as mqtt
 
@@ -10,6 +9,7 @@ from utils import js_long_to_date, DataPoint, parse_dict
 
 class MqttReciever:
     def __init__(self, config='config.json', host='localhost', port=1883, topic='pcc_in'):
+        self.running = True
 
         with open(config) as f:
             self.config = json.loads(f.read())
@@ -28,13 +28,16 @@ class MqttReciever:
         self.run_forever()
 
     def infinite_sender(self, socketio):
-        while True:
+        while self.running:
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
-            time.sleep(0.5)
+        print("Quitting reciever")
+        self.client.loop_stop()
+
+
 
     def run_forever(self):
-        t = threading.Thread(target=self.client.loop_forever)
+        t = threading.Thread(target=self.client.loop_forever, daemon=True)
         t.start()
 
     def recieve_message(self, _client, _userdata, msg):

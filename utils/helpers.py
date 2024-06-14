@@ -4,7 +4,6 @@ from copy import deepcopy
 
 import numpy as np
 
-
 class DataPoint:
     def __init__(self, timestamp, value):
         self.timestamp = timestamp
