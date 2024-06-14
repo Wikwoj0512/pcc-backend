@@ -48,3 +48,6 @@ class Config:
             self.mqtt_host = 'localhost'
             self.mqtt_port = 1883
             self.reciever_config = 'config.json'
+
+    def __repr__(self):
+        return f"Hosting PCC on port {self.pcc_port}, recieving mqtt traffic from {self.mqtt_host}:{self.mqtt_port} on topic {self.mqtt_topic} and parsing it according to {self.reciever_config}"

@@ -61,6 +61,7 @@ def my_connect():
 def my_disconnect():
     reciever.sessions.pop(request.sid)
 
+print(config)
 
 if __name__ == '__main__':
     socketio_thread = threading.Thread(target=socketio.run, args=(app,),

@@ -44,7 +44,10 @@ class Session:
             keys = field.get('keys')
             ret_data[origin] = {}
             for key in keys:
-                points = data.get(origin).get(key)
+                points = data.get(origin)
+                if not points:
+                    continue
+                points = points.get(key)
                 if not len(points):
                     ret_data[origin][key] = []
                     continue
