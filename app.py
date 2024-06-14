@@ -1,4 +1,6 @@
 import json
+import os
+import signal
 import sys
 import threading
 
@@ -66,6 +68,4 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         print("Wyłączanie")
 
-        reciever.running = False
-
-        sys.exit(0)
+        os.kill(os.getpid(), signal.SIGINT)

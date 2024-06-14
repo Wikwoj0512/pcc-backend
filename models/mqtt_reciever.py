@@ -1,5 +1,6 @@
 import json
 import threading
+import time
 
 import paho.mqtt.client as mqtt
 
@@ -31,13 +32,14 @@ class MqttReciever:
         while self.running:
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
+            time.sleep(0.5)
         print("Quitting reciever")
         self.client.loop_stop()
 
 
 
     def run_forever(self):
-        t = threading.Thread(target=self.client.loop_forever, daemon=True)
+        t = threading.Thread(target=self.client.loop_forever)
         t.start()
 
     def recieve_message(self, _client, _userdata, msg):
