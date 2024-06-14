@@ -1,0 +1,5 @@
+pcc-port: 2137
+mqtt-topic: pcc/in
+mqtt-host: localhost
+mqtt-port: 1883
+reciever-config: config.json
