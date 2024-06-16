@@ -2,7 +2,10 @@ import json
 import threading
 import time
 
+from flask_socketio import SocketIO
+
 import paho.mqtt.client as mqtt
+
 
 from .session import Session
 from utils import js_long_to_date, DataPoint, parse_dict
@@ -12,7 +15,7 @@ class MqttReciever:
     def __init__(self, config='config.json', host='localhost', port=1883, topic='pcc/in'):
         self.running = True
 
-        with open(config) as f:
+        with open(config, encoding='utf-8') as f:
             self.config = json.loads(f.read())
         self.client = mqtt.Client()
 
@@ -24,25 +27,27 @@ class MqttReciever:
 
         self.last_message = None
         self.data = {}
+        self.origins_changed = False
 
         self.sessions = {}
         self.run_forever()
 
-    def infinite_sender(self, socketio):
+    def infinite_sender(self, socketio: SocketIO):
         while self.running:
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
             time.sleep(0.5)
+            if self.origins_changed:
+                self.origins_changed = False
+                socketio.emit('origins', self.get_origins(), namespace='/')
         print("Quitting reciever")
         self.client.loop_stop()
-
-
 
     def run_forever(self):
         t = threading.Thread(target=self.client.loop_forever)
         t.start()
 
-    def recieve_message(self, _client, _userdata, msg):
+    def recieve_message(self, _client, _userdata, msg: mqtt.MQTTMessage):
         try:
             message = json.loads(msg.payload)
         except Exception as e:
@@ -69,16 +74,17 @@ class MqttReciever:
 
         if previous is None:
             self.data[origin] = {}
+            self.origins_changed = True
         parsed = parse_dict(data)
         for key, value in parsed.items():
 
             previous_data_point = self.data[origin].get(key)
             if previous_data_point is None:
                 self.data[origin][key] = []
-
+                self.origins_changed = True
             self.data[origin][key].append(DataPoint(timestamp, value))
 
-    def get_origns(self):
+    def get_origins(self):
         ret_list = []
         for (origin, v) in self.data.items():
             display_name = str(origin)
@@ -95,14 +101,14 @@ class MqttReciever:
 
         return ret_list
 
-    def create_session(self, session_name):
+    def create_session(self, session_name: str):
         self.sessions[session_name] = Session(session_name)
         return session_name
 
-    def get_session(self, session_name):
+    def get_session(self, session_name: str):
         return self.sessions.get(session_name)
 
-    def remove_session(self, session_name):
+    def remove_session(self, session_name: str):
         session = self.get_session(session_name)
         if not session:
             return False

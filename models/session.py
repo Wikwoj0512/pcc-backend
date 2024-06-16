@@ -1,19 +1,24 @@
-from utils import get_data_points, largest_triangle_three_buckets
+from typing import Dict, List, Union
+
+from flask_socketio import SocketIO
+
+from utils import get_data_points, largest_triangle_three_buckets, DataType
 
 
 class Session:
-    def __init__(self, session_id):
+    def __init__(self, session_id: str):
         self.session_id = session_id
         self.fields = []
         self.timeframe = 0.1
         self.points = 10
 
-    def execute(self, data, socketio):
+    def execute(self, data: DataType, socketio: SocketIO):
         points = self.get_points(data)
         socketio.emit('data', points, namespace='/', to=self.session_id)
 
-    def configure(self, data):
+    def configure(self, data: Dict[str, Union[Dict[str, List[str]], Union[str, float], Union[str, int]]]):
         # setting origins
+
         origins = data.get('origins')
         if origins is not None and isinstance(origins, dict):
             fields = []
@@ -37,7 +42,7 @@ class Session:
             print(f"Failed to set points for data {data}: {e}")
         return None
 
-    def get_points(self, data):
+    def get_points(self, data: DataType):
         ret_data = {}
         for field in self.fields:
             origin = field.get('origin')
@@ -48,7 +53,7 @@ class Session:
                 if not points:
                     continue
                 points = points.get(key)
-                if not len(points):
+                if not points:
                     ret_data[origin][key] = []
                     continue
                 timestamp = points[-1].timestamp - self.timeframe

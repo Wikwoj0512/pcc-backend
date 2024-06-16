@@ -1,8 +1,10 @@
 import hashlib
 import random
 from copy import deepcopy
+from typing import Dict, List
 
 import numpy as np
+
 
 class DataPoint:
     def __init__(self, timestamp, value):
@@ -14,6 +16,9 @@ class DataPoint:
 
     def __repr__(self):
         return f"{self.timestamp}: {self.value}"
+
+
+DataType = Dict[str, Dict[str, List[DataPoint]]]
 
 
 def create_session_name(n: int) -> str:
@@ -49,7 +54,7 @@ def add_data_point(data: list[DataPoint], value: float, timestamp: float):
     ret_data = deepcopy(data)
     if len(data) == 0:
         return [point]
-    if (point > data[-1]):
+    if point > data[-1]:
         ret_data.append(point)
         return ret_data
     start = 0
@@ -77,7 +82,6 @@ def get_data_points(data: list[DataPoint], timestamp: float) -> list[DataPoint]:
             start = mid + 1
         mid = (start + end) // 2
     return data[start:]
-
 
 
 def largest_triangle_three_buckets(data, target_count):
