@@ -4,7 +4,7 @@ import signal
 import threading
 
 from flask import Flask, request
-from flask_socketio import SocketIO
+from flask_socketio import SocketIO, emit
 from flask_cors import CORS, cross_origin
 
 from models import MqttReciever
@@ -58,6 +58,7 @@ def my_event(data):
 @socketio.on('connect')
 def my_connect():
     reciever.create_session(request.sid)
+    emit('origins', reciever.get_origins(), namespace='/', to=request.sid)
 
 
 @socketio.on('disconnect')
