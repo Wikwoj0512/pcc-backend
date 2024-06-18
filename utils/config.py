@@ -22,7 +22,7 @@ class Config:
             self.analyze_console(args)
             return
 
-        self.analyze_config_file(args.config if args.config else 'app_config.yaml')
+        self.analyze_config_file(args.config if args.config else 'config.yaml')
 
     def analyze_console(self, args):
         self.pcc_port = int(args.pcc_port) if args.pcc_port else 2137
