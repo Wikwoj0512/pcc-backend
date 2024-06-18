@@ -28,6 +28,7 @@ reciever = MqttReciever(
 
 socketio.start_background_task(reciever.infinite_sender, socketio)
 
+
 @app.route('/data')
 @cross_origin()
 def get_data():
@@ -72,12 +73,12 @@ if __name__ == '__main__':
     socketio_thread = threading.Thread(
         target=socketio.run,
         args=(app,),
-        kwargs={"debug": False, "host": "0.0.0.0", "port": config.pcc_port},
+        kwargs={"debug": False, "host": "0.0.0.0", "port": config.pcc_port, "allow_unsafe_werkzeug": True},
         daemon=True)
     socketio_thread.start()
     try:
         while True:
-            input()
+            pass
     except KeyboardInterrupt:
         print("Wyłączanie")
 

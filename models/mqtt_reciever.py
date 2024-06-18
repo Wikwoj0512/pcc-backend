@@ -12,7 +12,7 @@ from utils import js_long_to_date, DataPoint, parse_dict
 
 
 class MqttReciever:
-    def __init__(self, config='config.json', host='localhost', port=1883, topic='pcc/in'):
+    def __init__(self, config='app_config.json', host='localhost', port=1883, topic='pcc/in'):
         self.running = True
 
         with open(config, encoding='utf-8') as f:

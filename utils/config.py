@@ -29,7 +29,7 @@ class Config:
         self.mqtt_topic = args.mqtt_topic if args.mqtt_topic else 'pcc/in'
         self.mqtt_host = args.mqtt_host if args.mqtt_host else 'localhost'
         self.mqtt_port = int(args.mqtt_port) if args.mqtt_port else 1883
-        self.reciever_config = args.reciever_config if args.reciever_config else 'config.json'
+        self.reciever_config = args.reciever_config if args.reciever_config else 'app_config.json'
 
     def analyze_config_file(self, config_file):
         try:
@@ -40,14 +40,14 @@ class Config:
             self.mqtt_topic = contents.get('mqtt-topic', 'pcc/in')
             self.mqtt_host = contents.get('mqtt-host', 'localhost')
             self.mqtt_port = int(contents.get('mqtt-port', 1883))
-            self.reciever_config = contents.get('reciever-config', 'config.json')
+            self.reciever_config = contents.get('reciever-config', 'app_config.json')
         except Exception as e:
             print(e)
             self.pcc_port = 2137
             self.mqtt_topic = 'pcc/in'
             self.mqtt_host = 'localhost'
             self.mqtt_port = 1883
-            self.reciever_config = 'config.json'
+            self.reciever_config = 'app_config.json'
 
     def __repr__(self):
         return f"Hosting PCC on port {self.pcc_port}, recieving mqtt traffic from {self.mqtt_host}:{self.mqtt_port} on topic {self.mqtt_topic} and parsing it according to {self.reciever_config}"

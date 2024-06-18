@@ -1,5 +1,5 @@
 pcc-port: 2137
 mqtt-topic: pcc/in
-mqtt-host: localhost
+mqtt-host: host.docker.internal
 mqtt-port: 1883
-reciever-config: config.json
+reciever-config: app_config.json
