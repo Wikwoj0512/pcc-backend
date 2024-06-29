@@ -72,7 +72,7 @@ class MqttReceiver:
         high = timestamp.get('high')
         low = timestamp.get('low')
         signed = timestamp.get('unsigned')
-        if (high is None or low is None or signed is None): return
+        if high is None or low is None or signed is None: return
 
         timestamp = js_long_to_date(high, low, signed)
         previous = self.data.get(origin)
@@ -105,7 +105,7 @@ class MqttReceiver:
         for key, val in keys.items():
             if 'location' in key:
                 if key.endswith('longtitude'):
-                    origin_location['long'] = val
+                    origin_location['lng'] = val
                     continue
                 if key.endswith('latitude'):
                     origin_location['lat'] = val
@@ -114,7 +114,7 @@ class MqttReceiver:
                     origin_location['height'] = val
                     continue
 
-        if origin_location.get('lat') is not None and origin_location.get('long') is not None:
+        if origin_location.get('lat') is not None and origin_location.get('lng') is not None:
             self.locations[origin] = origin_location
             self.add_location_to_history(origin, origin_location)
 
@@ -124,8 +124,8 @@ class MqttReceiver:
             self.location_history[origin] = [location, ]
             return
         last_position = previous_locations[-1]
-        now_coords = (location.get('long', 0), location.get('lat', 0))
-        last_coords = (last_position.get('long', 0), last_position.get('lat', 0))
+        now_coords = (location.get('lng', 0), location.get('lat', 0))
+        last_coords = (last_position.get('lng', 0), last_position.get('lat', 0))
 
         dist = distance(last_coords, now_coords).m
         now_height = location.get('height', 0)
