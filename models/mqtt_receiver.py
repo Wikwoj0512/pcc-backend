@@ -44,7 +44,7 @@ class MqttReceiver:
             if self.origins_changed:
                 self.origins_changed = False
                 socketio.emit('origins', self.get_origins(), namespace='/')
-                socketio.emit('locations', self.get_locations())
+            socketio.emit('locations', self.get_locations())
         print("Quitting receiver")
         self.client.loop_stop()
 
@@ -100,9 +100,9 @@ class MqttReceiver:
         display_names = origin_config.get('keys', {})
         return [{"name": key, "displayName": display_names.get(key, key)} for key in keys]
 
-    def parse_locations(self, origin: str, keys: dict[str, Any]):
+    def parse_locations(self, origin: str, keys):
         origin_location = self.locations.get(origin, {})
-        for key, val in keys.items():
+        for key, val in keys:
             if 'location' in key:
                 if key.endswith('longitude'):
                     origin_location['lng'] = val
