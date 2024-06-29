@@ -1,17 +1,17 @@
 import json
 import threading
 import time
+from typing import Any
 
 from flask_socketio import SocketIO
 
 import paho.mqtt.client as mqtt
 
-
 from .session import Session
 from utils import js_long_to_date, DataPoint, parse_dict
 
 
-class MqttReciever:
+class MqttReceiver:
     def __init__(self, config='app_config.json', host='localhost', port=1883, topic='pcc/in'):
         self.running = True
 
@@ -27,6 +27,7 @@ class MqttReciever:
 
         self.last_message = None
         self.data = {}
+        self.locations = {}
         self.origins_changed = False
 
         self.sessions = {}
@@ -40,7 +41,8 @@ class MqttReciever:
             if self.origins_changed:
                 self.origins_changed = False
                 socketio.emit('origins', self.get_origins(), namespace='/')
-        print("Quitting reciever")
+                socketio.emit('locations', self.get_locations())
+        print("Quitting receiver")
         self.client.loop_stop()
 
     def run_forever(self):
@@ -76,30 +78,57 @@ class MqttReciever:
             self.data[origin] = {}
             self.origins_changed = True
         parsed = parse_dict(data)
-        for key, value in parsed.items():
+        self.parse_locations(origin, parsed.items())
 
+        for key, value in parsed.items():
             previous_data_point = self.data[origin].get(key)
             if previous_data_point is None:
                 self.data[origin][key] = []
                 self.origins_changed = True
+
             self.data[origin][key].append(DataPoint(timestamp, value))
+
+    def get_origin_display_name(self, origin: str):
+        origin_config = self.config.get('origins', {}).get(origin, {})
+        return origin_config.get('displayName', origin)
+
+    def get_origin_keys_display_names(self, origin: str, keys: list[str]):
+        origin_config = self.config.get('origins', {}).get(origin, {})
+        display_names = origin_config.get('keys', {})
+        return [{"name": key, "displayName": display_names.get(key, key)} for key in keys]
+
+    def parse_locations(self, origin: str, keys: dict[str, Any]):
+        origin_location = self.locations.get(origin, {})
+        for key, val in keys.items():
+            if 'location' in key:
+                if key.endswith('longtitude'):
+                    origin_location['long'] = val
+                    continue
+                if key.endswith('latitude'):
+                    origin_location['lat'] = val
+                    continue
+                if key.endswith('height'):
+                    origin_location['height'] = val
+                    continue
+
+        if origin_location.get('lat') is not None and origin_location.get('long') is not None:
+            self.locations[origin] = origin_location
 
     def get_origins(self):
         ret_list = []
         for (origin, v) in self.data.items():
-            display_name = str(origin)
-            try:
-                origin_config = self.config.get('origins', {}).get(display_name, {})
-                display_name = origin_config.get('displayName', display_name)
-                ret_keys = []
-                keys = origin_config.get('keys', {})
-                for key in v.keys():
-                    ret_keys.append({"name": key, "displayName": keys.get(key, key)})
-                ret_list.append({"name": origin, "displayName": display_name, "keys": ret_keys})
-            except Exception as e:
-                print(f"failed to find display_name for {origin}: {e}")
-
+            display_name = self.get_origin_display_name(origin)
+            keys = self.get_origin_keys_display_names(origin, v.keys())
+            ret_list.append(
+                {"name": origin, "displayName": display_name, "keys": keys})
         return ret_list
+
+    def get_locations(self):
+        ret_data = {}
+        for origin, value in self.locations.items():
+            value["displayName"] = self.get_origin_display_name(origin)
+            ret_data[origin] = value
+        return ret_data
 
     def create_session(self, session_name: str):
         self.sessions[session_name] = Session(session_name)

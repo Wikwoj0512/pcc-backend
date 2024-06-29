@@ -1,2 +1,2 @@
-from .mqtt_reciever import MqttReciever
+from .mqtt_receiver import MqttReceiver
 from .session import Session

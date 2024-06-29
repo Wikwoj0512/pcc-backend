@@ -7,7 +7,7 @@ from flask import Flask, request
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS, cross_origin
 
-from models import MqttReciever
+from models import MqttReceiver
 
 from utils import Config
 
@@ -20,13 +20,13 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 config = Config()
 
-reciever = MqttReciever(
-    config.reciever_config,
+receiver = MqttReceiver(
+    config.receiver_config,
     config.mqtt_host,
     config.mqtt_port,
     config.mqtt_topic)
 
-socketio.start_background_task(reciever.infinite_sender, socketio)
+socketio.start_background_task(receiver.infinite_sender, socketio)
 
 
 @app.route('/data')
@@ -35,7 +35,7 @@ def get_data():
     """
     :return: all data
     """
-    return json.dumps(reciever.data, default=vars)
+    return json.dumps(receiver.data, default=vars)
 
 
 @app.route('/charts/origins')
@@ -44,12 +44,12 @@ def get_origins():
     """
     :return: List of origins
     """
-    return json.dumps(reciever.get_origins())
+    return json.dumps(receiver.get_origins())
 
 
 @socketio.on('configure')
 def my_event(data):
-    session = reciever.get_session(request.sid)
+    session = receiver.get_session(request.sid)
     try:
         session.configure(data)
     except Exception as e:
@@ -58,13 +58,13 @@ def my_event(data):
 
 @socketio.on('connect')
 def my_connect():
-    reciever.create_session(request.sid)
-    emit('origins', reciever.get_origins(), namespace='/', to=request.sid)
+    receiver.create_session(request.sid)
+    emit('origins', receiver.get_origins(), namespace='/', to=request.sid)
 
 
 @socketio.on('disconnect')
 def my_disconnect():
-    reciever.sessions.pop(request.sid)
+    receiver.sessions.pop(request.sid)
 
 
 print(config)
