@@ -79,6 +79,7 @@ def my_event(data):
 def my_connect():
     receiver.create_session(request.sid)
     emit('origins', receiver.get_origins(), namespace='/', to=request.sid)
+    emit("location_history", receiver.get_location_history())
 
 
 @socketio.on('disconnect')

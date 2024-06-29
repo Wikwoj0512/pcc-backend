@@ -4,6 +4,8 @@ import time
 from typing import Any
 
 from flask_socketio import SocketIO
+from geopy.distance import distance
+from math import sqrt
 
 import paho.mqtt.client as mqtt
 
@@ -28,6 +30,7 @@ class MqttReceiver:
         self.last_message = None
         self.data = {}
         self.locations = {}
+        self.location_history = {}
         self.origins_changed = False
 
         self.sessions = {}
@@ -113,6 +116,25 @@ class MqttReceiver:
 
         if origin_location.get('lat') is not None and origin_location.get('long') is not None:
             self.locations[origin] = origin_location
+            self.add_location_to_history(origin, origin_location)
+
+    def add_location_to_history(self, origin, location):
+        previous_locations = self.location_history.get(origin, [])
+        if not len(previous_locations):
+            self.location_history[origin] = [location, ]
+            return
+        last_position = previous_locations[-1]
+        now_coords = (location.get('long', 0), location.get('lat', 0))
+        last_coords = (last_position.get('long', 0), last_position.get('lat', 0))
+
+        dist = distance(last_coords, now_coords).m
+        now_height = location.get('height', 0)
+        last_height = last_position.get('height', 0)
+        height_diff = abs(now_height - last_height)
+        dist = sqrt(dist ** 2 + height_diff ** 2)
+        if dist > 1:
+            previous_locations.append(location)
+            self.location_history[origin] = previous_locations
 
     def get_origins(self):
         ret_list = []
@@ -143,3 +165,7 @@ class MqttReceiver:
             return False
         session.kill()
         self.sessions.pop(session_name)
+
+    def get_location_history(self):
+        return self.location_history
+
