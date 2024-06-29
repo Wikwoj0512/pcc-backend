@@ -11,7 +11,7 @@ from math import sqrt
 import paho.mqtt.client as mqtt
 
 from .session import Session
-from utils import js_long_to_date, DataPoint, parse_dict
+from utils import js_long_to_date, DataPoint, parse_dict, check_location_difference
 
 
 class MqttReceiver:
@@ -33,6 +33,7 @@ class MqttReceiver:
         self.locations = {}
         self.location_history = {}
         self.origins_changed = False
+        self.locations_changed = False
 
         self.sessions = {}
         self.run_forever()
@@ -45,7 +46,9 @@ class MqttReceiver:
             if self.origins_changed:
                 self.origins_changed = False
                 socketio.emit('origins', self.get_origins(), namespace='/')
-            socketio.emit('locations', self.get_locations())
+            if self.locations_changed:
+                self.locations_changed = False
+                socketio.emit('locations', self.get_locations())
         print("Quitting receiver")
         self.client.loop_stop()
 
@@ -103,39 +106,30 @@ class MqttReceiver:
 
     def parse_locations(self, origin: str, keys):
         origin_location = self.locations.get(origin, {})
+        new_location = deepcopy(origin_location)
         for key, val in keys:
             if 'location' in key:
                 if key.endswith('longitude'):
-                    origin_location['lng'] = val
+                    new_location['lng'] = val
                     continue
                 if key.endswith('latitude'):
-                    origin_location['lat'] = val
+                    new_location['lat'] = val
                     continue
                 if key.endswith('height'):
-                    origin_location['alt'] = val
+                    new_location['alt'] = val
                     continue
 
-        if origin_location.get('lat') is not None and origin_location.get('lng') is not None:
-            self.locations[origin] = origin_location
-            self.add_location_to_history(origin, origin_location)
+        if new_location.get('lat') is not None and new_location.get('lng') is not None:
+            if check_location_difference(origin_location, new_location):
+                self.locations_changed=True
+                self.locations[origin] = new_location
+                self.add_location_to_history(origin, origin_location)
 
     def add_location_to_history(self, origin, location):
         previous_locations = deepcopy(self.location_history.get(origin, []))
-        if not len(previous_locations):
-            self.location_history[origin] = [location, ]
-            return
-        last_position = previous_locations[-1]
-        now_coords = (location.get('lng', 0), location.get('lat', 0))
-        last_coords = (last_position.get('lng', 0), last_position.get('lat', 0))
 
-        dist = distance(last_coords, now_coords).m
-        now_height = location.get('alt', 0)
-        last_height = last_position.get('alt', 0)
-        height_diff = abs(now_height - last_height)
-        dist = sqrt(dist ** 2 + height_diff ** 2)
-        if dist > 1:
-            previous_locations.append(location)
-            self.location_history[origin] = previous_locations
+        previous_locations.append(location)
+        self.location_history[origin] = previous_locations
 
     def get_origins(self):
         ret_list = []

@@ -1,9 +1,11 @@
 import hashlib
 import random
 from copy import deepcopy
+from math import sqrt
 from typing import Dict, List
 
 import numpy as np
+from geopy.distance import distance
 
 
 class DataPoint:
@@ -133,3 +135,18 @@ def parse_dict(data: dict):
             ret_dict[key] = val
 
     return ret_dict
+
+
+def check_location_difference(location1, location2):
+    coords_1 = (location1.get('lng'), location1.get('lat'))
+    coords_2 = (location2.get('lng'), location2.get('lat'))
+    if None in coords_1 and not None in coords_2:
+        return True
+    if None in coords_1 or None in coords_2:
+        return False
+    dist = distance(coords_2, coords_1).m
+    now_height = location1.get('alt', 0)
+    last_height = location2.get('alt', 0)
+    height_diff = abs(now_height - last_height)
+    dist = sqrt(dist ** 2 + height_diff ** 2)
+    return dist > 1
