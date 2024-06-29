@@ -1,6 +1,7 @@
 import json
 import threading
 import time
+from copy import deepcopy
 from typing import Any
 
 from flask_socketio import SocketIO
@@ -119,7 +120,7 @@ class MqttReceiver:
             self.add_location_to_history(origin, origin_location)
 
     def add_location_to_history(self, origin, location):
-        previous_locations = self.location_history.get(origin, [])
+        previous_locations = deepcopy(self.location_history.get(origin, []))
         if not len(previous_locations):
             self.location_history[origin] = [location, ]
             return
