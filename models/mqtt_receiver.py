@@ -112,7 +112,7 @@ class MqttReceiver:
                     origin_location['lat'] = val
                     continue
                 if key.endswith('height'):
-                    origin_location['height'] = val
+                    origin_location['alt'] = val
                     continue
 
         if origin_location.get('lat') is not None and origin_location.get('lng') is not None:
@@ -129,8 +129,8 @@ class MqttReceiver:
         last_coords = (last_position.get('lng', 0), last_position.get('lat', 0))
 
         dist = distance(last_coords, now_coords).m
-        now_height = location.get('height', 0)
-        last_height = last_position.get('height', 0)
+        now_height = location.get('alt', 0)
+        last_height = last_position.get('alt', 0)
         height_diff = abs(now_height - last_height)
         dist = sqrt(dist ** 2 + height_diff ** 2)
         if dist > 1:
