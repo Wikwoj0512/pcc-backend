@@ -3,7 +3,7 @@ import os
 import signal
 import threading
 
-from flask import Flask, request
+from flask import Flask, request, send_file
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS, cross_origin
 
@@ -12,6 +12,9 @@ from models import MqttReceiver
 from utils import Config
 
 app = Flask(__name__)
+
+if not os.path.isdir('maps'):
+    os.mkdir('maps')
 
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, cors_allowed_origins=['http://localhost:5173'], async_mode='threading')
@@ -45,6 +48,22 @@ def get_origins():
     :return: List of origins
     """
     return json.dumps(receiver.get_origins())
+
+
+@app.route('/maps')
+@cross_origin()
+def get_maps():
+    return json.dumps(os.listdir('maps'))
+
+
+@app.route('/maps/<path:pars>')
+def paths(pars):
+    if '..' in pars:
+        return "Not ok"
+    path = os.path.join('maps', *pars.split('/'))
+    if not os.path.isfile(path):
+        return f"Path {path} is not file"
+    return send_file(path)
 
 
 @socketio.on('configure')
