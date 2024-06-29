@@ -104,7 +104,7 @@ class MqttReceiver:
         origin_location = self.locations.get(origin, {})
         for key, val in keys.items():
             if 'location' in key:
-                if key.endswith('longtitude'):
+                if key.endswith('longitude'):
                     origin_location['lng'] = val
                     continue
                 if key.endswith('latitude'):
