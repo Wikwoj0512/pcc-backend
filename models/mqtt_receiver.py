@@ -121,9 +121,9 @@ class MqttReceiver:
 
         if new_location.get('lat') is not None and new_location.get('lng') is not None:
             if check_location_difference(origin_location, new_location):
-                self.locations_changed=True
+                self.locations_changed = True
                 self.locations[origin] = new_location
-                self.add_location_to_history(origin, origin_location)
+                self.add_location_to_history(origin, new_location)
 
     def add_location_to_history(self, origin, location):
         previous_locations = deepcopy(self.location_history.get(origin, []))
@@ -142,7 +142,7 @@ class MqttReceiver:
 
     def get_locations(self):
         ret_data = {}
-        for origin, value in self.locations.items():
+        for origin, value in deepcopy(self.locations).items():
             value["displayName"] = self.get_origin_display_name(origin)
             ret_data[origin] = value
         return ret_data
@@ -163,4 +163,3 @@ class MqttReceiver:
 
     def get_location_history(self):
         return self.location_history
-
