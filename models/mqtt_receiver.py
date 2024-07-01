@@ -2,11 +2,8 @@ import json
 import threading
 import time
 from copy import deepcopy
-from typing import Any
 
 from flask_socketio import SocketIO
-from geopy.distance import distance
-from math import sqrt
 
 import paho.mqtt.client as mqtt
 
@@ -34,6 +31,7 @@ class MqttReceiver:
         self.location_history = {}
         self.origins_changed = False
         self.locations_changed = False
+        self.location_origins_changed = False
 
         self.sessions = {}
         self.run_forever()
@@ -42,12 +40,15 @@ class MqttReceiver:
         while self.running:
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
+            if self.locations_changed:
+                for session in self.sessions.values():
+                    session.send_locations(self.locations, socketio)
             time.sleep(0.5)
             if self.origins_changed:
                 self.origins_changed = False
                 socketio.emit('charts/origins', self.get_origins())
-            if self.locations_changed:
-                self.locations_changed = False
+            if self.location_origins_changed:
+                self.location_origins_changed = False
                 socketio.emit('maps/origins', self.get_location_origins())
         print("Quitting receiver")
         self.client.loop_stop()
@@ -118,6 +119,8 @@ class MqttReceiver:
                 if key.endswith('height'):
                     new_location['alt'] = val
                     continue
+        if not len(origin_location.items()):
+            self.location_origins_changed = True
 
         if new_location.get('lat') is not None and new_location.get('lng') is not None:
             if check_location_difference(origin_location, new_location):
@@ -163,7 +166,6 @@ class MqttReceiver:
 
     def get_location_origins(self):
         origins_list = []
-        for origin in list(self.locations.keys()):
+        for origin in list(self.location_history.keys()):
             origins_list.append({'name': origin, 'displayName': self.get_origin_display_name(origin)})
         return origins_list
-

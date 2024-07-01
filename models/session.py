@@ -80,4 +80,10 @@ class Session:
 
         return ret_dict
 
-
+    def send_locations(self, locations, socketio: SocketIO):
+        ret_dict = {}
+        for origin in self.locations:
+            location = locations.get(origin)
+            if location:
+                ret_dict[origin] = location
+        socketio.emit('maps/data', ret_dict, to=self.session_id)
