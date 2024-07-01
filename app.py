@@ -72,7 +72,7 @@ def paths(pars):
     return send_file(path)
 
 
-@socketio.on('configure')
+@socketio.on('charts/configure')
 def configure_session(data):
     session = receiver.get_session(request.sid)
     try:

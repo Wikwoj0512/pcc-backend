@@ -14,7 +14,7 @@ class Session:
 
     def execute(self, data: DataType, socketio: SocketIO):
         points = self.get_points(data)
-        socketio.emit('data', points, namespace='/', to=self.session_id)
+        socketio.emit('charts/data', points, to=self.session_id)
 
     def configure(self, data: Dict[str, Union[Dict[str, List[str]], Union[str, float], Union[str, int]]]):
         # setting origins
