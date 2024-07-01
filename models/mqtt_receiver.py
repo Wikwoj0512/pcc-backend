@@ -45,10 +45,10 @@ class MqttReceiver:
             time.sleep(0.5)
             if self.origins_changed:
                 self.origins_changed = False
-                socketio.emit('origins', self.get_origins(), namespace='/')
+                socketio.emit('charts/origins', self.get_origins())
             if self.locations_changed:
                 self.locations_changed = False
-                socketio.emit('locations', self.get_locations())
+                socketio.emit('maps/origins', self.get_location_origins())
         print("Quitting receiver")
         self.client.loop_stop()
 

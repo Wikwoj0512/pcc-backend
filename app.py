@@ -55,10 +55,12 @@ def get_origins():
 def get_maps():
     return json.dumps(os.listdir('maps'))
 
+
 @app.route('/maps/origins')
 @cross_origin()
 def get_map_origins():
     return json.dumps(receiver.get_location_origins())
+
 
 @app.route('/maps/<path:pars>')
 def paths(pars):
@@ -71,7 +73,7 @@ def paths(pars):
 
 
 @socketio.on('configure')
-def my_event(data):
+def configure_session(data):
     session = receiver.get_session(request.sid)
     try:
         session.configure(data)
@@ -79,11 +81,18 @@ def my_event(data):
         print(e)
 
 
+@socketio.on('request')
+def get_origins(value):
+    session_id = request.sid
+    if value == 'charts/origins':
+        socketio.emit(receiver.get_origins(), to=session_id)
+    if value == 'maps/origins':
+        socketio.emit(receiver.get_location_origins(), to=session_id)
+
+
 @socketio.on('connect')
 def my_connect():
     receiver.create_session(request.sid)
-    emit('origins', receiver.get_origins(), namespace='/', to=request.sid)
-    emit("location_history", receiver.get_location_history())
 
 
 @socketio.on('disconnect')
