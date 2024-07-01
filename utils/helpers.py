@@ -137,7 +137,7 @@ def parse_dict(data: dict):
     return ret_dict
 
 
-def check_location_difference(location1, location2):
+def check_location_difference(location1, location2, resolution = 1):
     coords_1 = (location1.get('lng'), location1.get('lat'))
     coords_2 = (location2.get('lng'), location2.get('lat'))
     if None in coords_1 and not None in coords_2:
@@ -149,4 +149,4 @@ def check_location_difference(location1, location2):
     last_height = location2.get('alt', 0)
     height_diff = abs(now_height - last_height)
     dist = sqrt(dist ** 2 + height_diff ** 2)
-    return dist > 1
+    return dist > resolution

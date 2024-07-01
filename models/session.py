@@ -75,8 +75,8 @@ class Session:
         ret_dict = {}
         for key in self.locations:
             history = locations_history.get(key)
-            if history is not None:
-                ret_dict[key] = history
+            if history is not None and isinstance(history, list):
+                ret_dict[key] = history[-200:]
 
         return ret_dict
 
@@ -87,3 +87,12 @@ class Session:
             if location:
                 ret_dict[origin] = location
         socketio.emit('maps/data', ret_dict, to=self.session_id)
+
+    def send_trail_locations(self, last_trail_points, changed_trail_points, socketio):
+        changed_locations = {}
+        for x in changed_trail_points:
+            if x in self.locations:
+                trail_point = last_trail_points.get(x)
+                if trail_point:
+                    changed_locations[x] = trail_point
+        socketio.emit('maps/trail', changed_locations, to=self.session_id)

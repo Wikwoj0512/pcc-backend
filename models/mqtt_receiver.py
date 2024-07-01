@@ -30,8 +30,11 @@ class MqttReceiver:
         self.locations = {}
         self.location_history = {}
         self.origins_changed = False
+
         self.locations_changed = False
         self.location_origins_changed = False
+        self.last_trail_points = {}
+        self.changed_trail_points = []
 
         self.sessions = {}
         self.run_forever()
@@ -41,8 +44,13 @@ class MqttReceiver:
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
             if self.locations_changed:
+                self.locations_changed=False
                 for session in self.sessions.values():
                     session.send_locations(self.locations, socketio)
+            if len(self.changed_trail_points):
+                for session in self.sessions.values():
+                    session.send_trail_locations(self.last_trail_points, self.changed_trail_points, socketio)
+                self.changed_trail_points = []
             time.sleep(0.5)
             if self.origins_changed:
                 self.origins_changed = False
@@ -127,6 +135,11 @@ class MqttReceiver:
                 self.locations_changed = True
                 self.locations[origin] = new_location
                 self.add_location_to_history(origin, new_location)
+
+            last_trail = self.last_trail_points.get(origin, {})
+            if check_location_difference(last_trail, new_location, 5):
+                self.last_trail_points[origin] = new_location
+                self.changed_trail_points.append(origin)
 
     def add_location_to_history(self, origin, location):
         previous_locations = deepcopy(self.location_history.get(origin, []))
