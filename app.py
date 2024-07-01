@@ -85,9 +85,9 @@ def configure_session(data):
 def get_origins(value):
     session_id = request.sid
     if value == 'charts/origins':
-        socketio.emit(receiver.get_origins(), to=session_id)
+        socketio.emit('charts/origins', receiver.get_origins(), to=session_id)
     if value == 'maps/origins':
-        socketio.emit(receiver.get_location_origins(), to=session_id)
+        socketio.emit('maps/origins', receiver.get_location_origins(), to=session_id)
 
 
 @socketio.on('connect')
