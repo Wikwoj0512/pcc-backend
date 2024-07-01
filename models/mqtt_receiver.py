@@ -161,9 +161,6 @@ class MqttReceiver:
         session.kill()
         self.sessions.pop(session_name)
 
-    def get_location_history(self):
-        return self.location_history
-
     def get_location_origins(self):
         origins_list = []
         for origin in list(self.locations.keys()):

@@ -11,6 +11,7 @@ class Session:
         self.fields = []
         self.timeframe = 0.1
         self.points = 10
+        self.locations = []
 
     def execute(self, data: DataType, socketio: SocketIO):
         points = self.get_points(data)
@@ -62,3 +63,21 @@ class Session:
                 points = [[point.timestamp, point.value] for point in points]
                 ret_data[origin][key] = points
         return ret_data
+
+    def configure_locations(self, fields, locations_history):
+        if not isinstance(fields, list):
+            raise Exception("Wrong format")
+        if not all([isinstance(x, str) for x in fields]):
+            raise Exception("Wrong format")
+
+        self.locations = fields
+
+        ret_dict = {}
+        for key in self.locations:
+            history = locations_history.get(key)
+            if history is not None:
+                ret_dict[key] = history
+
+        return ret_dict
+
+

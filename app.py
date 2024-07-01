@@ -81,6 +81,17 @@ def configure_session(data):
         print(e)
 
 
+@socketio.on('maps/configure')
+def configure_maps(data):
+    session_id = request.sid
+    session = receiver.get_session(session_id)
+    try:
+        history = session.configure_locations(data, receiver.location_history)
+        socketio.emit('maps/history', history, to=session_id)
+    except Exception as e:
+        print(e)
+
+
 @socketio.on('request')
 def get_origins(value):
     session_id = request.sid
