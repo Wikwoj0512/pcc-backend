@@ -55,6 +55,10 @@ def get_origins():
 def get_maps():
     return json.dumps(os.listdir('maps'))
 
+@app.route('/maps/origins')
+@cross_origin()
+def get_map_origins():
+    return json.dumps(receiver.get_location_origins())
 
 @app.route('/maps/<path:pars>')
 def paths(pars):

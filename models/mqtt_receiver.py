@@ -163,3 +163,10 @@ class MqttReceiver:
 
     def get_location_history(self):
         return self.location_history
+
+    def get_location_origins(self):
+        origins_list = []
+        for origin in list(self.locations.keys()):
+            origins_list.append({'name': origin, 'displayName': self.get_origin_display_name(origin)})
+        return origins_list
+
