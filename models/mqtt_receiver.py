@@ -25,6 +25,8 @@ class MqttReceiver:
         self.client.connect(host, port, 60)
         self.client.subscribe(topic)
 
+        self.socketio = None
+
         self.last_message = None
         self.data = {}
         self.locations = {}
@@ -37,14 +39,17 @@ class MqttReceiver:
         self.changed_trail_points = []
 
         self.sessions = {}
+        self.last_messages = {}
+
         self.run_forever()
 
     def infinite_sender(self, socketio: SocketIO):
+        self.socketio = socketio
         while self.running:
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
             if self.locations_changed:
-                self.locations_changed=False
+                self.locations_changed = False
                 for session in self.sessions.values():
                     session.send_locations(self.locations, socketio)
             if len(self.changed_trail_points):
@@ -52,6 +57,7 @@ class MqttReceiver:
                     session.send_trail_locations(self.last_trail_points, self.changed_trail_points, socketio)
                 self.changed_trail_points = []
             time.sleep(0.5)
+
             if self.origins_changed:
                 self.origins_changed = False
                 socketio.emit('charts/origins', self.get_origins())
@@ -95,7 +101,10 @@ class MqttReceiver:
             self.origins_changed = True
         parsed = parse_dict(data)
         self.parse_locations(origin, parsed.items())
-
+        last_origin_message = {"name": origin, "displayName": self.get_origin_display_name(origin),
+                               "timestamp": timestamp, "keys": []}
+        message_values = {}
+        message_keys = []
         for key, value in parsed.items():
             previous_data_point = self.data[origin].get(key)
             if previous_data_point is None:
@@ -103,6 +112,17 @@ class MqttReceiver:
                 self.origins_changed = True
 
             self.data[origin][key].append(DataPoint(timestamp, value))
+            message_values[key]=value
+            message_keys.append(key)
+        key_names = self.get_origin_keys_display_names(origin, message_keys)
+        for key in key_names:
+            last_origin_message['keys'].append({**key, 'value': message_values[key]})
+        self.last_messages[origin]=last_origin_message
+        self.send_last_messages()
+
+    def send_last_messages(self):
+        if self.socketio:
+            self.socketio.emit('raw/data', self.last_messages)
 
     def get_origin_display_name(self, origin: str):
         origin_config = self.config.get('origins', {}).get(origin, {})
@@ -182,3 +202,5 @@ class MqttReceiver:
         for origin in list(self.location_history.keys()):
             origins_list.append({'name': origin, 'displayName': self.get_origin_display_name(origin)})
         return origins_list
+
+
