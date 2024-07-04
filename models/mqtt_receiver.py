@@ -48,6 +48,8 @@ class MqttReceiver:
         while self.running:
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
+            socketio.emit('raw/data', self.last_messages)
+
             if self.locations_changed:
                 self.locations_changed = False
                 for session in self.sessions.values():
@@ -120,7 +122,7 @@ class MqttReceiver:
             key_name = key['name']
             last_origin_message['keys'].append({**key, 'value': message_values[key_name]})
         self.last_messages[origin]=last_origin_message
-        self.send_last_messages()
+        # self.send_last_messages()
 
     def send_last_messages(self):
         if self.socketio:
