@@ -79,50 +79,53 @@ class MqttReceiver:
         except Exception as e:
             print(f"Failed to decode message, exception: {e}, message: {msg.payload}")
             return
-        header = message.get('header')
-        if not header:
-            return
-        origin = header.get('origin')
+        try:
+            header = message.get('header')
+            if not header:
+                return
+            origin = header.get('origin')
 
-        data = message.get('data')
-        if data is None or origin is None: return
-        origin = str(origin)
+            data = message.get('data')
+            if data is None or origin is None: return
+            origin = str(origin)
 
-        timestamp = header.get('timestamp')
-        if not timestamp: return
-        high = timestamp.get('high')
-        low = timestamp.get('low')
-        signed = timestamp.get('unsigned')
-        if high is None or low is None or signed is None: return
+            timestamp = header.get('timestamp')
+            if not timestamp: return
+            high = timestamp.get('high')
+            low = timestamp.get('low')
+            signed = timestamp.get('unsigned')
+            if high is None or low is None or signed is None: return
 
-        timestamp = js_long_to_date(high, low, signed)
-        previous = self.data.get(origin)
+            timestamp = js_long_to_date(high, low, signed)
+            previous = self.data.get(origin)
 
-        if previous is None:
-            self.data[origin] = {}
-            self.origins_changed = True
-        parsed = parse_dict(data)
-        self.parse_locations(origin, parsed.items())
-        last_origin_message = {"name": origin, "displayName": self.get_origin_display_name(origin),
-                               "timestamp": timestamp, "keys": []}
-        message_values = {}
-        message_keys = []
-        for key, value in parsed.items():
-            previous_data_point = self.data[origin].get(key)
-            if previous_data_point is None:
-                self.data[origin][key] = []
+            if previous is None:
+                self.data[origin] = {}
                 self.origins_changed = True
+            parsed = parse_dict(data)
+            self.parse_locations(origin, parsed.items())
+            last_origin_message = {"name": origin, "displayName": self.get_origin_display_name(origin),
+                                   "timestamp": timestamp, "keys": []}
+            message_values = {}
+            message_keys = []
+            for key, value in parsed.items():
+                previous_data_point = self.data[origin].get(key)
+                if previous_data_point is None:
+                    self.data[origin][key] = []
+                    self.origins_changed = True
 
-            self.data[origin][key].append(DataPoint(timestamp, value))
-            message_values[key]=value
-            message_keys.append(key)
-        key_names = self.get_origin_keys_display_names(origin, message_keys)
+                self.data[origin][key].append(DataPoint(timestamp, value))
+                message_values[key]=value
+                message_keys.append(key)
+            key_names = self.get_origin_keys_display_names(origin, message_keys)
 
-        for key in key_names:
-            key_name = key['name']
-            last_origin_message['keys'].append({**key, 'value': message_values[key_name]})
-        self.last_messages[origin]=last_origin_message
-        # self.send_last_messages()
+            for key in key_names:
+                key_name = key['name']
+                last_origin_message['keys'].append({**key, 'value': message_values[key_name]})
+            self.last_messages[origin]=last_origin_message
+            # self.send_last_messages()
+        except Exception as e:
+            print(f"unsupported message: e")
 
     def send_last_messages(self):
         if self.socketio:
