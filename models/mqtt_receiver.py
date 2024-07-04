@@ -115,8 +115,10 @@ class MqttReceiver:
             message_values[key]=value
             message_keys.append(key)
         key_names = self.get_origin_keys_display_names(origin, message_keys)
+
         for key in key_names:
-            last_origin_message['keys'].append({**key, 'value': message_values[key]})
+            key_name = key['name']
+            last_origin_message['keys'].append({**key, 'value': message_values[key_name]})
         self.last_messages[origin]=last_origin_message
         self.send_last_messages()
 
