@@ -109,6 +109,8 @@ class MqttReceiver:
             message_values = {}
             message_keys = []
             for key, value in parsed.items():
+                if value is None:
+                    continue
                 previous_data_point = self.data[origin].get(key)
                 if previous_data_point is None:
                     self.data[origin][key] = []
