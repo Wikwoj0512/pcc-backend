@@ -163,13 +163,11 @@ class MqttReceiver:
             self.location_origins_changed = True
 
         if new_location.get('lat') is not None and new_location.get('lng') is not None:
-            if check_location_difference(origin_location, new_location):
-                self.locations[origin] = new_location
-                self.add_location_to_history(origin, new_location)
-
+            self.locations[origin] = new_location
             last_trail = self.last_trail_points.get(origin, {})
             if check_location_difference(last_trail, new_location, 5):
                 self.last_trail_points[origin] = new_location
+                self.add_location_to_history(origin, new_location)
                 self.changed_trail_points.append(origin)
 
 

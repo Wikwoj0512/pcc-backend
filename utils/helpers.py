@@ -145,11 +145,4 @@ def check_location_difference(location1, location2, resolution=1):
     if None in coords_1 or None in coords_2:
         return False
     dist = distance(coords_2, coords_1).m
-    now_height = location1.get('alt', 0)
-    last_height = location2.get('alt', 0)
-    if now_height is None or last_height is None:
-        height_diff = 0
-    else:
-        height_diff = abs(now_height - last_height)
-    dist = sqrt(dist ** 2 + height_diff ** 2)
     return dist > resolution
