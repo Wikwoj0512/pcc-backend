@@ -2,7 +2,7 @@ from typing import Dict, List, Union
 
 from flask_socketio import SocketIO
 
-from utils import get_data_points, largest_triangle_three_buckets, DataType
+from utils import get_data_points, largest_triangle_three_buckets, DataType, filter_points
 
 
 class Session:
@@ -57,7 +57,9 @@ class Session:
                 if not points:
                     ret_data[origin][key] = []
                     continue
+
                 timestamp = points[-1].timestamp - self.timeframe
+                points = filter_points(points)
                 points = get_data_points(points, timestamp)
                 points = largest_triangle_three_buckets(points, self.points)
                 points = [[point.timestamp, point.value] for point in points]

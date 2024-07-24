@@ -124,9 +124,8 @@ class MqttReceiver:
                 key_name = key['name']
                 last_origin_message['keys'].append({**key, 'value': message_values[key_name]})
             self.last_messages[origin] = last_origin_message
-            # self.send_last_messages()
         except Exception as e:
-            print(f"unsupported message: e")
+            print(f"unsupported message: {e}")
 
 
     def send_last_messages(self):

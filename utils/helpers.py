@@ -85,6 +85,27 @@ def get_data_points(data: list[DataPoint], timestamp: float) -> list[DataPoint]:
         mid = (start + end) // 2
     return data[start:]
 
+window_size=2
+
+def filter_points(data: list[DataPoint]) -> list[DataPoint]:
+    if len(data) <= 2*window_size+1:
+        return data
+    ret_data = data[:window_size]
+    points = data[:2*window_size]
+    for i in range(2*window_size, len(data)):
+        points.append(data[i])
+        point = points.pop(window_size)
+        point_values =np.array([p.value for p in points])
+        dev = np.std(point_values) + 1
+        avg = np.average(point_values)
+        if avg-3*dev<point.value<avg+3*dev:
+            ret_data.append(point)
+        points.insert(window_size, point)
+        points = points[1:]
+
+    ret_data.extend(data[-window_size:])
+    return ret_data
+
 
 def largest_triangle_three_buckets(data, target_count):
     if target_count >= len(data) or target_count <= 0:
