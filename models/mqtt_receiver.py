@@ -22,8 +22,11 @@ class MqttReceiver:
         self.topics = []
         self.client.on_message = self.recieve_message
 
-        self.client.connect(host, port, 60)
-        self.client.subscribe(topic)
+        def on_client_connect(client, *args, **kwargs):
+            print(f'Connecting to topic {topic}')
+            client.subscribe(topic)
+        self.client.on_connect = on_client_connect
+        self.client.connect(host, port)
 
         self.socketio = None
 
@@ -42,9 +45,14 @@ class MqttReceiver:
 
         self.run_forever()
 
+    def connect_client(self):
+        self.client.subscribe(self.topic)
+
     def infinite_sender(self, socketio: SocketIO):
         self.socketio = socketio
         while self.running:
+
+
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
             socketio.emit('raw/data', self.last_messages)
@@ -66,11 +74,9 @@ class MqttReceiver:
         print("Quitting receiver")
         self.client.loop_stop()
 
-
     def run_forever(self):
         t = threading.Thread(target=self.client.loop_forever)
         t.start()
-
 
     def recieve_message(self, _client, _userdata, msg: mqtt.MQTTMessage):
         try:
@@ -127,22 +133,18 @@ class MqttReceiver:
         except Exception as e:
             print(f"unsupported message: {e}")
 
-
     def send_last_messages(self):
         if self.socketio:
             self.socketio.emit('raw/data', self.last_messages)
-
 
     def get_origin_display_name(self, origin: str):
         origin_config = self.config.get('origins', {}).get(origin, {})
         return origin_config.get('displayName', origin)
 
-
     def get_origin_keys_display_names(self, origin: str, keys: list[str]):
         origin_config = self.config.get('origins', {}).get(origin, {})
         display_names = origin_config.get('keys', {})
         return [{"name": key, "displayName": display_names.get(key, key)} for key in keys]
-
 
     def parse_locations(self, origin: str, keys):
         origin_location = self.locations.get(origin, {})
@@ -169,13 +171,11 @@ class MqttReceiver:
                 self.add_location_to_history(origin, new_location)
                 self.changed_trail_points.append(origin)
 
-
     def add_location_to_history(self, origin, location):
         previous_locations = deepcopy(self.location_history.get(origin, []))
 
         previous_locations.append(location)
         self.location_history[origin] = previous_locations
-
 
     def get_origins(self):
         ret_list = []
@@ -186,7 +186,6 @@ class MqttReceiver:
                 {"name": origin, "displayName": display_name, "keys": keys})
         return ret_list
 
-
     def get_locations(self):
         ret_data = {}
         for origin, value in deepcopy(self.locations).items():
@@ -194,15 +193,12 @@ class MqttReceiver:
             ret_data[origin] = value
         return ret_data
 
-
     def create_session(self, session_name: str):
         self.sessions[session_name] = Session(session_name)
         return session_name
 
-
     def get_session(self, session_name: str):
         return self.sessions.get(session_name)
-
 
     def remove_session(self, session_name: str):
         session = self.get_session(session_name)
@@ -210,7 +206,6 @@ class MqttReceiver:
             return False
         session.kill()
         self.sessions.pop(session_name)
-
 
     def get_location_origins(self):
         origins_list = []
