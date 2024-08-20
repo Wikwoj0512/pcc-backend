@@ -25,12 +25,12 @@ class MqttReceiver:
         def on_client_connect(client, *args, **kwargs):
             print(f'Connecting to topic {topic}')
             client.subscribe(topic)
+
         self.client.on_connect = on_client_connect
         self.client.connect(host, port)
 
         self.socketio = None
 
-        self.last_message = None
         self.data = {}
         self.locations = {}
         self.location_history = {}
@@ -41,7 +41,7 @@ class MqttReceiver:
         self.changed_trail_points = []
 
         self.sessions = {}
-        self.last_messages = {}
+        self.raw_values = {}
 
         self.run_forever()
 
@@ -52,10 +52,10 @@ class MqttReceiver:
         self.socketio = socketio
         while self.running:
 
-
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
-            socketio.emit('raw/data', self.last_messages)
+
+            self.emit_raw_values(socketio)
 
             for session in self.sessions.values():
                 session.send_locations(self.locations, socketio)
@@ -109,33 +109,35 @@ class MqttReceiver:
                 self.origins_changed = True
             parsed = parse_dict(data)
             self.parse_locations(origin, parsed.items())
-            last_origin_message = {"name": origin, "displayName": self.get_origin_display_name(origin),
-                                   "timestamp": timestamp, "keys": []}
-            message_values = {}
+
+            current_origin_value = self.raw_values.get(origin, {"name": origin, 'keys': {}})
+
+            current_origin_value['timestamp'] = timestamp
+            current_origin_value['displayName'] = self.get_origin_display_name(origin)
+
             message_keys = []
             for key, value in parsed.items():
                 if value is None:
                     continue
-                previous_data_point = self.data[origin].get(key)
-                if previous_data_point is None:
-                    self.data[origin][key] = []
-                    self.origins_changed = True
+                self.check_origin(origin, key)
 
                 self.data[origin][key].append(DataPoint(timestamp, value))
-                message_values[key] = value
+                current_origin_value['keys'][key] = {'value': value}
+
                 message_keys.append(key)
+
             key_names = self.get_origin_keys_display_names(origin, message_keys)
 
             for key in key_names:
                 key_name = key['name']
-                last_origin_message['keys'].append({**key, 'value': message_values[key_name]})
-            self.last_messages[origin] = last_origin_message
+                current_origin_value['keys'][key_name] = {**key, **current_origin_value['keys'][key_name]}
+            self.raw_values[origin] = current_origin_value
         except Exception as e:
             print(f"unsupported message: {e}")
 
     def send_last_messages(self):
         if self.socketio:
-            self.socketio.emit('raw/data', self.last_messages)
+            self.socketio.emit('raw/data', self.data)
 
     def get_origin_display_name(self, origin: str):
         origin_config = self.config.get('origins', {}).get(origin, {})
@@ -212,3 +214,16 @@ class MqttReceiver:
         for origin in list(self.location_history.keys()):
             origins_list.append({'name': origin, 'displayName': self.get_origin_display_name(origin)})
         return origins_list
+
+    def emit_raw_values(self, socketio):
+        emit_value = {}
+        for key, value in self.raw_values.items():
+            new_value = {**value, 'keys': list(value.get('keys').values())}
+            emit_value[key] = new_value
+        socketio.emit('raw/data', emit_value)
+
+    def check_origin(self, origin, key):
+        previous_data_point = self.data[origin].get(key)
+        if previous_data_point is None:
+            self.data[origin][key] = []
+            self.origins_changed = True
