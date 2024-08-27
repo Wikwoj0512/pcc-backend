@@ -17,7 +17,7 @@ if not os.path.isdir('maps'):
     os.mkdir('maps')
 
 app.config['SECRET_KEY'] = 'secret!'
-socketio = SocketIO(app, cors_allowed_origins=['http://localhost:5173'], async_mode='threading')
+socketio = SocketIO(app, cors_allowed_origins=['http://localhost', 'http://192.168.1.0'], async_mode='threading')
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
