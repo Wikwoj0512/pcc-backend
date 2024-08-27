@@ -1,2 +1,4 @@
 /venv/
 maps
+config.yaml
+app_config.json
