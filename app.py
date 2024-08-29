@@ -2,6 +2,7 @@ import json
 import os
 import signal
 import threading
+import time
 
 from flask import Flask, request, send_file
 from flask_socketio import SocketIO, emit
@@ -120,9 +121,11 @@ if __name__ == '__main__':
         kwargs={"debug": False, "host": "0.0.0.0", "port": config.pcc_port, "allow_unsafe_werkzeug": True},
         daemon=True)
     socketio_thread.start()
+
+    event = threading.Event()
     try:
         while True:
-            pass
+            input()
     except KeyboardInterrupt:
         print("Wyłączanie")
 
