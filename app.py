@@ -28,7 +28,8 @@ receiver = MqttReceiver(
     config.receiver_config,
     config.mqtt_host,
     config.mqtt_port,
-    config.mqtt_topic)
+    config.mqtt_topic,
+    config.status_app)
 
 socketio.start_background_task(receiver.infinite_sender, socketio)
 
@@ -122,7 +123,6 @@ if __name__ == '__main__':
         daemon=True)
     socketio_thread.start()
 
-    event = threading.Event()
     try:
         while True:
             input()

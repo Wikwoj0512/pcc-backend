@@ -3,6 +3,8 @@ import threading
 import time
 from copy import deepcopy
 
+import requests
+from flask import logging
 from flask_socketio import SocketIO
 
 import paho.mqtt.client as mqtt
@@ -12,8 +14,10 @@ from utils import js_long_to_date, DataPoint, parse_dict, check_location_differe
 
 
 class MqttReceiver:
-    def __init__(self, config='app_config.json', host='localhost', port=1883, topic='pcc/in'):
+    def __init__(self, config='app_config.json', host='localhost', port=1883, topic='pcc/in',
+                 status_application='http://localhost:2138/'):
         self.running = True
+        self.status_application = status_application
 
         with open(config, encoding='utf-8') as f:
             self.config = json.loads(f.read())
@@ -74,9 +78,24 @@ class MqttReceiver:
         print("Quitting receiver")
         self.client.loop_stop()
 
+    def status_sender(self):
+        while self.running:
+            try:
+                response = requests.get(self.status_application)
+                if response.status_code == 200:
+                    self.socketio.emit('statuses/data', response.json())
+                    time.sleep(0.2)
+                    continue
+                raise ValueError('Received invalid status code')
+            except Exception as e:
+                print(e)
+                time.sleep(5)
+
     def run_forever(self):
-        t = threading.Thread(target=self.client.loop_forever)
-        t.start()
+        ft = threading.Thread(target=self.client.loop_forever)
+        ft.start()
+        st = threading.Thread(target=self.status_sender)
+        st.start()
 
     def recieve_message(self, _client, _userdata, msg: mqtt.MQTTMessage):
         try:
