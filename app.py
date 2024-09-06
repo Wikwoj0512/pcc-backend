@@ -17,6 +17,9 @@ app = Flask(__name__)
 if not os.path.isdir('maps'):
     os.mkdir('maps')
 
+if not os.path.isdir('statuses'):
+    os.mkdir('statuses')
+
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, cors_allowed_origins=['http://localhost', 'http://localhost:5173', 'http://192.168.1.0'],
                     async_mode='threading')
@@ -57,6 +60,11 @@ def get_origins():
 @cross_origin()
 def get_maps():
     return json.dumps(os.listdir('maps'))
+
+@app.route('/statuses')
+@cross_origin()
+def get_statuses():
+    return json.dumps(os.listdir('statuses'))
 
 
 @app.route('/maps/origins')
