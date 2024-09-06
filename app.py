@@ -80,6 +80,15 @@ def paths(pars):
     path = os.path.join('maps', *pars.split('/'))
     if not os.path.isfile(path):
         return f"Path {path} is not file"
+    return (send_file(path)
+
+@app.route('/statuses/<path:pars>'))
+def statuses(pars):
+    if '..' in pars:
+        return "Not ok"
+    path = os.path.join('statuses', *pars.split('/'))
+    if not os.path.isfile(path):
+        return f"Path {path} is not file"
     return send_file(path)
 
 
