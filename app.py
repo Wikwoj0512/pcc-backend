@@ -17,8 +17,8 @@ app = Flask(__name__)
 if not os.path.isdir('maps'):
     os.mkdir('maps')
 
-if not os.path.isdir('statuses'):
-    os.mkdir('statuses')
+if not os.path.isdir('profiles'):
+    os.mkdir('profiles')
 
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, cors_allowed_origins=['http://localhost', 'http://localhost:5173', 'http://192.168.1.0'],
@@ -61,10 +61,10 @@ def get_origins():
 def get_maps():
     return json.dumps(os.listdir('maps'))
 
-@app.route('/statuses')
+@app.route('/profiles')
 @cross_origin()
-def get_statuses():
-    return json.dumps(os.listdir('statuses'))
+def get_profiles():
+    return json.dumps(os.listdir('profiles'))
 
 
 @app.route('/maps/origins')
@@ -82,11 +82,11 @@ def paths(pars):
         return f"Path {path} is not file"
     return (send_file(path)
 
-@app.route('/statuses/<path:pars>'))
-def statuses(pars):
+@app.route('/profiles/<path:pars>'))
+def profiles(pars):
     if '..' in pars:
         return "Not ok"
-    path = os.path.join('statuses', *pars.split('/'))
+    path = os.path.join('profiles', *pars.split('/'))
     if not os.path.isfile(path):
         return f"Path {path} is not file"
     return send_file(path)
