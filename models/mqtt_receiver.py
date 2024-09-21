@@ -9,13 +9,14 @@ from flask_socketio import SocketIO
 
 import paho.mqtt.client as mqtt
 
+from .profiles_handler import ProfilesHandler
 from .session import Session
 from utils import js_long_to_date, DataPoint, parse_dict, check_location_difference
 
 
 class MqttReceiver:
     def __init__(self, config='app_config.json', host='localhost', port=1883, topic='pcc/in',
-                 status_application='http://localhost:2138/'):
+                 status_application='http://localhost:2138/', profiles_config='profiles-config.json'):
         self.running = True
         self.status_application = status_application
 
@@ -46,6 +47,8 @@ class MqttReceiver:
 
         self.sessions = {}
         self.raw_values = {}
+        self.profiles_config = profiles_config
+        self.profiles_handler = None
 
         self.run_forever()
 
@@ -53,9 +56,18 @@ class MqttReceiver:
         self.client.subscribe(self.topic)
 
     def infinite_sender(self, socketio: SocketIO):
+
         self.socketio = socketio
+        if self.profiles_config:
+            try:
+                self.profiles_handler = ProfilesHandler(self.profiles_config, socketio)
+            except Exception as e:
+                print(f'failed to create profiles handler: {e}')
+
         while self.running:
 
+            if self.profiles_handler is not None:
+                self.profiles_handler.emit()
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
 
@@ -138,12 +150,15 @@ class MqttReceiver:
             for key, value in parsed.items():
                 if value is None:
                     continue
+
                 self.check_origin(origin, key)
 
                 self.data[origin][key].append(DataPoint(timestamp, value))
                 current_origin_value['keys'][key] = {'value': value}
 
                 message_keys.append(key)
+                if self.profiles_handler is not None:
+                    self.profiles_handler.add_value(origin, key, value)
 
             key_names = self.get_origin_keys_display_names(origin, message_keys)
 
@@ -151,6 +166,8 @@ class MqttReceiver:
                 key_name = key['name']
                 current_origin_value['keys'][key_name] = {**key, **current_origin_value['keys'][key_name]}
             self.raw_values[origin] = current_origin_value
+            if self.profiles_handler is not None:
+                self.profiles_handler.emit_new()
         except Exception as e:
             print(f"unsupported message: {e}")
 

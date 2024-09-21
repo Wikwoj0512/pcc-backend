@@ -3,3 +3,4 @@ mqtt-topic: pcc/in
 mqtt-host: localhost
 mqtt-port: 1883
 receiver-config: app_config.json
+profiles-config: profiles-config.json

@@ -17,6 +17,7 @@ class Config:
         parser.add_argument('--mqtt-port', help='mqtt port')
         parser.add_argument('--receiver-config', help="receiver config file")
         parser.add_argument('--status-app', help="Status app url")
+        parser.add_argument('--profiles-config', help="profiles config file")
         args = parser.parse_args()
 
         if args.console:
@@ -32,6 +33,7 @@ class Config:
         self.mqtt_port = int(args.mqtt_port) if args.mqtt_port else 1883
         self.receiver_config = args.receiver_config if args.receiver_config else 'app_config.json'
         self.status_app = args.status_app if args.status_app else 'http://localhost:2138/'
+        self.profiles_config = args.profiles_config if args.profiles_config else 'profiles-config.json'
 
     def analyze_config_file(self, config_file):
         try:
@@ -44,6 +46,7 @@ class Config:
             self.mqtt_port = int(contents.get('mqtt-port', 1883))
             self.receiver_config = contents.get('receiver-config', 'app_config.json')
             self.status_app = contents.get('status-app', 'http://localhost:2138/')
+            self.profiles_config = contents.get('profiles-config', 'profiles-config.json')
 
         except Exception as e:
             print(e)
@@ -53,6 +56,7 @@ class Config:
             self.mqtt_port = 1883
             self.receiver_config = 'app_config.json'
             self.status_app = 'http://localhost:2138/'
+            self.profiles_config = 'profiles-config.json'
 
     def __repr__(self):
         return f"Hosting PCC on port {self.pcc_port}, recieving mqtt traffic from {self.mqtt_host}:{self.mqtt_port} on topic {self.mqtt_topic} and parsing it according to {self.receiver_config} and fetching from status app on {self.status_app}"

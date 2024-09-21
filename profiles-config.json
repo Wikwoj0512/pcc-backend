@@ -1,0 +1,19 @@
+[
+  {
+    "origin": 100,
+    "field": "analog_in.raw",
+    "unit": "unit",
+    "nazwa-profilu": {
+      "dom-text-id": "id-1",
+      "function": "toString"
+    }
+  },
+  {
+    "origin": 100,
+    "field": "value",
+    "nazwa-profilu": {
+      "dom-text-id": "id-1",
+      "function": "toString"
+    }
+  }
+]
