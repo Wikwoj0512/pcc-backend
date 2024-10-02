@@ -4,7 +4,7 @@ import signal
 import threading
 import time
 
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, Response
 from flask_socketio import SocketIO, emit
 from flask_cors import CORS, cross_origin
 
@@ -81,7 +81,7 @@ def paths(pars):
         return "Not ok"
     path = os.path.join('maps', *pars.split('/'))
     if not os.path.isfile(path):
-        return f"Path {path} is not file"
+        return Response(f"Path {path} is not file", 404)
     return send_file(path)
 
 @app.route('/profiles/<path:pars>')
@@ -90,7 +90,7 @@ def profiles(pars):
         return "Not ok"
     path = os.path.join('profiles', *pars.split('/'))
     if not os.path.isfile(path):
-        return f"Path {path} is not file"
+        return Response(f"Path {path} is not file", 404)
     return send_file(path)
 
 
