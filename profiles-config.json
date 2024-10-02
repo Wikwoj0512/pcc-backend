@@ -2,18 +2,20 @@
   {
     "origin": 100,
     "field": "analog_in.raw",
-    "unit": "unit",
-    "nazwa-profilu": {
-      "dom-text-id": "id-1",
-      "function": "toString"
+    "unit": "V",
+    "engine-test": {
+      "domId": "sb-1-battery-voltage-12V-1",
+      "modifierFunction": "highlighContainerWhenMoreThan",
+      "args": [
+        12
+      ]
     }
   },
   {
     "origin": 100,
     "field": "value",
-    "nazwa-profilu": {
-      "dom-text-id": "id-1",
-      "function": "toString"
+    "engine-test": {
+      "domId": "sb-2-battery-voltage-12V-2"
     }
   }
 ]
