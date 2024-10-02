@@ -64,7 +64,9 @@ def get_maps():
 @app.route('/profiles')
 @cross_origin()
 def get_profiles():
-    return json.dumps(os.listdir('profiles'))
+    with open('profiles/manifest.json') as f:
+        return f.read()
+
 
 
 @app.route('/maps/origins')
@@ -80,9 +82,9 @@ def paths(pars):
     path = os.path.join('maps', *pars.split('/'))
     if not os.path.isfile(path):
         return f"Path {path} is not file"
-    return (send_file(path)
+    return send_file(path)
 
-@app.route('/profiles/<path:pars>'))
+@app.route('/profiles/<path:pars>')
 def profiles(pars):
     if '..' in pars:
         return "Not ok"
