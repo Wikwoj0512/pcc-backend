@@ -89,6 +89,7 @@ def profiles(pars):
     if '..' in pars:
         return "Not ok"
     path = os.path.join('profiles', *pars.split('/'))
+    print(path)
     if not os.path.isfile(path):
         return Response(f"Path {path} is not file", 404)
     return send_file(path)

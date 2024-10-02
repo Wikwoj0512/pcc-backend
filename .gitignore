@@ -1,4 +1,6 @@
 /venv/
+**/.DS_Store
+**/__pycache__
 .idea
 maps
 config.yaml

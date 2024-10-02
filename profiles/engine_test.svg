@@ -1228,7 +1228,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <rect
           x="295.923"
           y="344.183"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           width="93.003"
           height="92.684"
         />
@@ -1236,33 +1236,33 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <tspan
             x="0"
             y="0"
-            style="font-family: 'Lato-Regular'; font-size: 16.4613"
+            style="font-size: 16.4613"
           >
             Heat
           </tspan>
           <tspan
             x="-18.099"
             y="19.754"
-            style="font-family: 'Lato-Regular'; font-size: 16.4613"
+            style="font-size: 16.4613"
           >
             exchanger
           </tspan>
         </text>
         <g id="Water_Pump_Icon_2_">
           <path
-            style="fill: #010101"
+            style="fill: currentColor"
             d="M376.898,399.069c-0.754,1.283-1.568,1.743-2.593,1.474c-1.121-0.295-1.601-1.092-1.601-2.665
 				c0-3.487,0.041-6.978-0.017-10.466c-0.02-1.283,0.376-2.205,1.56-2.741c0.37,0,0.747,0,1.117,0
 				c0.696,0.327,1.208,0.843,1.542,1.54C376.898,390.497,376.898,394.786,376.898,399.069z"
           />
           <path
-            style="fill: #010101"
+            style="fill: currentColor"
             d="M314.271,411.092c0.756-1.283,1.568-1.742,2.597-1.477c1.118,0.298,1.598,1.094,1.598,2.665
 				c0,3.489-0.041,6.98,0.018,10.47c0.018,1.283-0.377,2.203-1.561,2.742c-0.369,0-0.748,0-1.117,0
 				c-0.695-0.328-1.209-0.846-1.538-1.542C314.271,419.664,314.271,415.375,314.271,411.092z"
           />
           <path
-            style="fill: #010101"
+            style="fill: currentColor"
             d="M327.165,411.092c-0.256-1.369-0.626-2.677-0.729-4.01c-0.574-7.535,2.231-13.497,8.479-17.774
 				c3.107-2.119,6.608-3.072,10.351-3.091c6.783-0.033,13.562-0.015,20.342-0.007c3.439,0,5.853,2.416,5.841,5.857
 				c-0.007,0.974-0.007,1.972-0.22,2.911c-0.549,2.459-2.714,4.158-5.252,4.221c-0.882,0.028-1.769,0.01-2.721,0.01
@@ -1280,7 +1280,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
 				C337.351,422.692,337.547,422.692,337.745,422.692z"
           />
           <path
-            style="fill: #010101"
+            style="fill: currentColor"
             d="M342.998,405.118c0-1.334,1.081-2.415,2.417-2.415c1.333,0,2.414,1.081,2.414,2.415
 				c0,1.338-1.081,2.416-2.414,2.416C344.079,407.534,342.998,406.456,342.998,405.118L342.998,405.118z M353.875,395.702
 				l-4.732,4.841c-0.836-0.694-1.875-1.155-3.008-1.302v-7.146c-8.191,0-10.141,4.562-10.141,4.562l4.765,4.646
@@ -1301,15 +1301,15 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
       <g id="N2O_Line">
         <g id="Electro_Valve_3_">
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             points="621.436,496.806 609.59,517.347 597.726,496.816 			"
           />
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             points="597.726,537.884 609.57,517.347 621.436,537.875 			"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="609.59"
             y1="517.347"
             x2="632.631"
@@ -1318,66 +1318,66 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <rect
             x="632.631"
             y="511.078"
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             width="24.488"
             height="12.535"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="643.6"
             y1="511.078"
             x2="643.6"
             y2="523.613"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="643.6"
             y1="523.613"
             x2="651.557"
             y2="533.201"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="651.557"
             y1="533.201"
             x2="665.058"
             y2="533.201"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="657.119"
             y1="517.347"
             x2="665.058"
             y2="517.347"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="643.6"
             y1="511.078"
             x2="641.189"
             y2="502.701"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="641.189"
             y1="502.701"
             x2="665.058"
             y2="502.701"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="666.859"
             cy="502.702"
             r="1.8"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="666.859"
             cy="517.345"
             r="1.801"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="666.859"
             cy="533.201"
             r="1.801"
@@ -1385,35 +1385,35 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <polygon
             style="
               fill: #ffffff;
-              stroke: #000000;
+              stroke: currentColor;
               stroke-width: 0.5;
               stroke-miterlimit: 10;
             "
-            points="667.549,518.23 666.168,517.347 
+            points="667.549,518.23 666.168,517.347
 				667.549,516.462 			"
           />
         </g>
         <text transform="matrix(1 0 0 1 489.0537 560.0659)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             N2O Emergency
           </tspan>
           <tspan
             x="9.061"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Electro Valve
           </tspan>
           <tspan
             x="-4.063"
             y="31.2"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             (NORMAL OPEN)
           </tspan>
         </text>
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="690.466"
           cy="412.974"
           r="1.083"
@@ -1422,25 +1422,25 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <rect
             x="100.671"
             y="480.838"
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             width="24.333"
             height="97.313"
           />
           <path
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             d="M100.671,480.838c0-5.84,5.441-10.566,12.166-10.566"
           />
           <path
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             d="M125.004,480.838c0-5.84-5.442-10.566-12.167-10.566"
           />
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
-            points="117.058,462.483 112.837,469.793 108.616,462.483 			
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
+            points="117.058,462.483 112.837,469.793 108.616,462.483
 				"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="112.837"
             y1="470.272"
             x2="112.837"
@@ -1448,7 +1448,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="839.188"
           y1="412.973"
           x2="690.614"
@@ -1456,48 +1456,48 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <g id="Heand_Valve_2_">
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="446.161"
             cy="412.949"
             r="5.331"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="469.46"
             y1="402.433"
             x2="469.328"
             y2="423.758"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="469.328"
             y1="423.758"
             x2="450.119"
             y2="416.515"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="469.46"
             y1="402.433"
             x2="450.164"
             y2="409.435"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="422.416"
             y1="423.465"
             x2="422.548"
             y2="402.138"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="422.548"
             y1="402.138"
             x2="441.757"
             y2="409.383"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="422.416"
             y1="423.465"
             x2="441.712"
@@ -1505,33 +1505,33 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <text transform="matrix(1 0 0 1 430.8125 371.0024)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             N2O
           </tspan>
           <tspan
             x="-19.896"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Ball Check 1
           </tspan>
           <tspan
             x="-0.988"
             y="31.2"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Valve
           </tspan>
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="495.568"
           y1="412.948"
           x2="469.013"
           y2="413.243"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="422.548"
           y1="413.736"
           x2="388.926"
@@ -1539,17 +1539,17 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <g id="Electro_Valve_4_">
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
-            points="521.859,372.283 540.646,383.117 521.869,393.969 			
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
+            points="521.859,372.283 540.646,383.117 521.869,393.969
 				"
           />
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
-            points="559.431,393.969 540.646,383.134 559.422,372.283 			
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
+            points="559.431,393.969 540.646,383.134 559.422,372.283
 				"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="540.646"
             y1="383.117"
             x2="540.646"
@@ -1558,66 +1558,66 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <rect
             x="534.911"
             y="339.644"
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             width="11.467"
             height="22.398"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="534.911"
             y1="352.009"
             x2="546.378"
             y2="352.009"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="546.378"
             y1="352.009"
             x2="555.147"
             y2="344.732"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="555.147"
             y1="344.732"
             x2="555.147"
             y2="332.384"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="540.646"
             y1="339.644"
             x2="540.646"
             y2="332.384"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="534.911"
             y1="352.009"
             x2="527.251"
             y2="354.214"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="527.251"
             y1="354.214"
             x2="527.251"
             y2="332.384"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="527.251"
             cy="330.736"
             r="1.646"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="540.645"
             cy="330.736"
             r="1.647"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="555.146"
             cy="330.736"
             r="1.647"
@@ -1625,11 +1625,11 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <polygon
             style="
               fill: #ffffff;
-              stroke: #000000;
+              stroke: currentColor;
               stroke-width: 0.5;
               stroke-miterlimit: 10;
             "
-            points="541.454,330.105 540.646,331.369 
+            points="541.454,330.105 540.646,331.369
 				539.837,330.105 			"
           />
         </g>
@@ -1637,24 +1637,24 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <rect
             x="62.671"
             y="480.838"
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             width="24.333"
             height="97.313"
           />
           <path
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             d="M62.671,480.838c0-5.84,5.441-10.566,12.166-10.566"
           />
           <path
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             d="M87.004,480.838c0-5.84-5.442-10.566-12.167-10.566"
           />
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             points="79.058,462.483 74.837,469.793 70.616,462.483 			"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="74.837"
             y1="470.272"
             x2="74.837"
@@ -1663,48 +1663,48 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         </g>
         <g id="Heand_Valve_9_">
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="151.652"
             cy="445.857"
             r="5.331"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="174.952"
             y1="435.341"
             x2="174.819"
             y2="456.667"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="174.819"
             y1="456.667"
             x2="155.61"
             y2="449.423"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="174.952"
             y1="435.341"
             x2="155.655"
             y2="442.343"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="127.907"
             y1="456.374"
             x2="128.04"
             y2="435.046"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="128.04"
             y1="435.046"
             x2="147.249"
             y2="442.292"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="127.907"
             y1="456.374"
             x2="147.204"
@@ -1713,48 +1713,48 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         </g>
         <g id="Heand_Valve_10_">
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="151.652"
             cy="412.802"
             r="5.331"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="174.952"
             y1="402.287"
             x2="174.819"
             y2="423.611"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="174.819"
             y1="423.611"
             x2="155.61"
             y2="416.369"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="174.952"
             y1="402.287"
             x2="155.655"
             y2="409.289"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="127.907"
             y1="423.318"
             x2="128.04"
             y2="401.992"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="128.04"
             y1="401.992"
             x2="147.249"
             y2="409.236"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="127.907"
             y1="423.318"
             x2="147.204"
@@ -1762,56 +1762,56 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="112.837"
           y1="462.483"
           x2="112.837"
           y2="446.003"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="112.837"
           y1="446.003"
           x2="127.907"
           y2="446.003"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="74.837"
           y1="462.483"
           x2="74.837"
           y2="411.955"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="74.837"
           y1="411.955"
           x2="127.907"
           y2="411.955"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="174.885"
           y1="446.082"
           x2="195.854"
           y2="446.082"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="174.819"
           y1="412.655"
           x2="195.854"
           y2="412.655"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="195.854"
           y1="446.082"
           x2="195.854"
           y2="412.655"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="195.854"
           y1="412.655"
           x2="295.923"
@@ -1819,14 +1819,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <g id="Pressure_gauge_1_3_">
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="231.642"
             y1="413.441"
             x2="231.642"
             y2="437.218"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="231.642"
             cy="449.372"
             r="11.338"
@@ -1849,43 +1849,43 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           </text>
         </g>
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="74.837"
           cy="411.955"
           r="0.991"
         />
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="195.854"
           cy="445.859"
           r="0.991"
         />
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="231.642"
           cy="412.949"
           r="0.991"
         />
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="195.854"
           cy="412.655"
           r="0.991"
         />
         <text transform="matrix(1 0 0 1 133.8569 477.0181)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             N2O Initial
           </tspan>
           <tspan
             x="3.25"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Ball Valve
           </tspan>
         </text>
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="112.837"
           cy="446.003"
           r="0.991"
@@ -1893,17 +1893,17 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <g id="Atmosferic_Relief">
           <g id="Electro_Valve_6_">
             <polygon
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
-              points="1007.356,258.914 986.817,247.068 1007.346,235.203 
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
+              points="1007.356,258.914 986.817,247.068 1007.346,235.203
 									"
             />
             <polygon
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
-              points="966.278,235.203 986.817,247.049 966.288,258.914 				
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
+              points="966.278,235.203 986.817,247.049 966.288,258.914
 					"
             />
             <line
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               x1="986.817"
               y1="247.068"
               x2="986.817"
@@ -1912,82 +1912,82 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             <rect
               x="980.55"
               y="270.108"
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               width="12.537"
               height="24.489"
             />
             <line
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               x1="993.087"
               y1="281.078"
               x2="980.55"
               y2="281.078"
             />
             <line
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               x1="980.55"
               y1="281.078"
               x2="970.961"
               y2="289.035"
             />
             <line
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               x1="970.961"
               y1="289.035"
               x2="970.961"
               y2="302.535"
             />
             <line
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               x1="986.817"
               y1="294.598"
               x2="986.817"
               y2="302.535"
             />
             <line
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               x1="993.087"
               y1="281.078"
               x2="1001.461"
               y2="278.668"
             />
             <line
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               x1="1001.461"
               y1="278.668"
               x2="1001.461"
               y2="302.535"
             />
             <path
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               d="M999.661,304.337c0-0.994,0.806-1.803,1.8-1.803
 					c0.995,0,1.801,0.809,1.801,1.803c0,0.992-0.806,1.801-1.801,1.801C1000.467,306.138,999.661,305.33,999.661,304.337z"
             />
             <path
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               d="M985.017,304.337c0-0.994,0.806-1.803,1.802-1.803
 					c0.994,0,1.8,0.809,1.8,1.803c0,0.992-0.806,1.801-1.8,1.801C985.822,306.138,985.017,305.33,985.017,304.337z"
             />
             <path
-              style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+              style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
               d="M969.161,304.337c0-0.994,0.808-1.803,1.803-1.803
 					c0.992,0,1.8,0.809,1.8,1.803c0,0.992-0.808,1.801-1.8,1.801C969.969,306.138,969.161,305.33,969.161,304.337z"
             />
             <polygon
-              style="fill: #ffffff; stroke: #000000; stroke-miterlimit: 10"
-              points="985.933,305.027 986.817,303.644 987.701,305.025 
+              style="fill: #ffffff; stroke: currentColor; stroke-miterlimit: 10"
+              points="985.933,305.027 986.817,303.644 987.701,305.025
 									"
             />
           </g>
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="935.787"
             y1="247.059"
             x2="921.89"
             y2="260.957"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="935.787"
             y1="247.059"
             x2="921.586"
@@ -1997,34 +1997,34 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             <tspan
               x="0"
               y="0"
-              style="font-family: 'Lato-Regular'; font-size: 13.12"
+              style="font-size: 13.12"
             >
               N2O
             </tspan>
             <tspan
               x="-35.555"
               y="15.744"
-              style="font-family: 'Lato-Regular'; font-size: 13.12"
+              style="font-size: 13.12"
             >
               Atmosferic Bleed
             </tspan>
             <tspan
               x="-24.258"
               y="31.488"
-              style="font-family: 'Lato-Regular'; font-size: 13.12"
+              style="font-size: 13.12"
             >
               Electro Valve
             </tspan>
           </text>
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="1007.356"
             y1="247.068"
             x2="1030.854"
             y2="247.059"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="935.787"
             y1="247.059"
             x2="966.278"
@@ -2032,7 +2032,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="690.47"
           y1="412.622"
           x2="690.47"
@@ -2040,17 +2040,17 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <g id="Electro_Valve_1_">
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
-            points="757.707,496.806 745.861,517.347 733.998,496.816 			
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
+            points="757.707,496.806 745.861,517.347 733.998,496.816
 				"
           />
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
-            points="733.998,537.884 745.842,517.347 757.707,537.875 			
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
+            points="733.998,537.884 745.842,517.347 757.707,537.875
 				"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="745.861"
             y1="517.347"
             x2="768.902"
@@ -2059,66 +2059,66 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <rect
             x="768.902"
             y="511.078"
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             width="24.488"
             height="12.535"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="779.871"
             y1="511.078"
             x2="779.871"
             y2="523.613"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="779.871"
             y1="523.613"
             x2="787.828"
             y2="533.201"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="787.828"
             y1="533.201"
             x2="801.33"
             y2="533.201"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="793.391"
             y1="517.347"
             x2="801.33"
             y2="517.347"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="779.871"
             y1="511.078"
             x2="777.461"
             y2="502.701"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="777.461"
             y1="502.701"
             x2="801.33"
             y2="502.701"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="803.131"
             cy="502.702"
             r="1.8"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="803.131"
             cy="517.345"
             r="1.801"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="803.131"
             cy="533.201"
             r="1.801"
@@ -2126,43 +2126,43 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <polygon
             style="
               fill: #ffffff;
-              stroke: #000000;
+              stroke: currentColor;
               stroke-width: 0.5;
               stroke-miterlimit: 10;
             "
-            points="803.82,518.23 802.439,517.347 
+            points="803.82,518.23 802.439,517.347
 				803.82,516.462 			"
           />
         </g>
         <text transform="matrix(1 0 0 1 731.6982 559.0659)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             N2O Emergency
           </tspan>
           <tspan
             x="9.061"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Electro Valve
           </tspan>
           <tspan
             x="-6.416"
             y="31.2"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             (NORMAL CLOSE)
           </tspan>
         </text>
         <g id="Pressure_gauge_1">
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="581.388"
             y1="415.166"
             x2="581.388"
             y2="421.956"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="581.388"
             cy="433.293"
             r="11.338"
@@ -2186,48 +2186,48 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         </g>
         <g id="Heand_Valve_1_">
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="862.933"
             cy="413.737"
             r="5.331"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="886.232"
             y1="403.221"
             x2="886.1"
             y2="424.546"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="886.1"
             y1="424.546"
             x2="866.891"
             y2="417.303"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="886.232"
             y1="403.221"
             x2="866.936"
             y2="410.223"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="839.188"
             y1="424.253"
             x2="839.32"
             y2="402.926"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="839.32"
             y1="402.926"
             x2="858.529"
             y2="410.171"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="839.188"
             y1="424.253"
             x2="858.484"
@@ -2235,80 +2235,80 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <text transform="matrix(1 0 0 1 817.0049 385.5669)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             N2O Ball Outlet
           </tspan>
           <tspan
             x="29.814"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Valve
           </tspan>
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1030.854"
           y1="413.441"
           x2="886.923"
           y2="413.441"
         />
         <text transform="matrix(1 0 0 1 120.2056 379.3052)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             N2O Initial
           </tspan>
           <tspan
             x="3.25"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Ball Valve
           </tspan>
         </text>
         <g id="Heand_Valve_3_">
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="690.615"
             cy="519.973"
             r="5.331"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="680.099"
             y1="496.673"
             x2="701.424"
             y2="496.806"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="701.424"
             y1="496.806"
             x2="694.181"
             y2="516.015"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="680.099"
             y1="496.673"
             x2="687.101"
             y2="515.97"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="701.131"
             y1="543.718"
             x2="679.804"
             y2="543.585"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="679.804"
             y1="543.585"
             x2="687.049"
             y2="524.376"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="701.131"
             y1="543.718"
             x2="694.129"
@@ -2316,47 +2316,47 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <text transform="matrix(1 0 0 1 632.9834 560.0659)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             N2O Emergency
           </tspan>
           <tspan
             x="18.772"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Ball Valve
           </tspan>
         </text>
         <g id="Pressure_gauge_1_2_">
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="231.642"
             y1="397.21"
             x2="231.642"
             y2="412.622"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="231.641"
             cy="386.198"
             r="11.338"
           />
           <line
-            style="stroke: #000000; stroke-miterlimit: 10"
+            style="stroke: currentColor; stroke-miterlimit: 10"
             x1="224.994"
             y1="395.197"
             x2="235.367"
             y2="378.786"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="235.685"
             y1="378.547"
             x2="234.653"
             y2="387.246"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="235.685"
             y1="378.547"
             x2="227.851"
@@ -2364,41 +2364,41 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="495.568"
           y1="382.086"
           x2="495.568"
           y2="413.438"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="495.568"
           y1="412.622"
           x2="495.568"
           y2="455.328"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="601.684"
           y1="412.973"
           x2="601.684"
           y2="455.679"
         />
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="495.568"
           cy="412.802"
           r="1.083"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="521.975"
           y1="382.49"
           x2="495.356"
           y2="382.49"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="522.187"
           y1="455.328"
           x2="495.356"
@@ -2406,15 +2406,15 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <g id="Electro_Valve_2_">
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             points="522.072,445.12 540.858,455.954 522.082,466.806 			"
           />
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             points="559.644,466.806 540.858,455.971 559.635,445.12 			"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="540.858"
             y1="455.954"
             x2="540.858"
@@ -2423,66 +2423,66 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <rect
             x="535.124"
             y="412.481"
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             width="11.467"
             height="22.398"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="535.124"
             y1="424.846"
             x2="546.591"
             y2="424.846"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="546.591"
             y1="424.846"
             x2="555.36"
             y2="417.569"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="555.36"
             y1="417.569"
             x2="555.36"
             y2="405.221"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="540.858"
             y1="412.481"
             x2="540.858"
             y2="405.221"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="535.124"
             y1="424.846"
             x2="527.464"
             y2="427.051"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="527.464"
             y1="427.051"
             x2="527.464"
             y2="405.221"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="527.464"
             cy="403.573"
             r="1.646"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="540.858"
             cy="403.573"
             r="1.647"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="555.359"
             cy="403.573"
             r="1.647"
@@ -2490,84 +2490,84 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <polygon
             style="
               fill: #ffffff;
-              stroke: #000000;
+              stroke: currentColor;
               stroke-width: 0.5;
               stroke-miterlimit: 10;
             "
-            points="541.667,402.942 540.858,404.206 
+            points="541.667,402.942 540.858,404.206
 				540.05,402.942 			"
           />
         </g>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="601.471"
           y1="382.49"
           x2="559.431"
           y2="382.49"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="601.684"
           y1="455.328"
           x2="559.537"
           y2="455.328"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="601.729"
           y1="382.49"
           x2="601.729"
           y2="413.438"
         />
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="601.729"
           cy="413.439"
           r="1.083"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="601.684"
           y1="413.736"
           x2="581.388"
           y2="413.736"
         />
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="581.388"
           cy="413.737"
           r="1.083"
         />
         <g id="Pressure_gauge_1_5_">
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="581.23"
             y1="408.156"
             x2="581.23"
             y2="411.864"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="581.356"
             cy="396.905"
             r="11.338"
           />
           <line
-            style="stroke: #000000; stroke-miterlimit: 10"
+            style="stroke: currentColor; stroke-miterlimit: 10"
             x1="574.423"
             y1="405.688"
             x2="584.797"
             y2="389.277"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="585.115"
             y1="389.039"
             x2="584.083"
             y2="397.737"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="585.115"
             y1="389.039"
             x2="577.28"
@@ -2576,48 +2576,48 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         </g>
         <g id="Heand_Valve_6_">
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="639.862"
             cy="413.097"
             r="5.331"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="663.162"
             y1="402.581"
             x2="663.029"
             y2="423.906"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="663.029"
             y1="423.906"
             x2="643.82"
             y2="416.663"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="663.162"
             y1="402.581"
             x2="643.865"
             y2="409.583"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="616.117"
             y1="423.613"
             x2="616.25"
             y2="402.286"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="616.25"
             y1="402.286"
             x2="635.459"
             y2="409.531"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="616.117"
             y1="423.613"
             x2="635.414"
@@ -2625,40 +2625,40 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="616.25"
           y1="412.951"
           x2="602.972"
           y2="413.246"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="690.466"
           y1="413.095"
           x2="663.029"
           y2="413.39"
         />
         <text transform="matrix(1 0 0 1 628.6943 435.3413)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             N2O
           </tspan>
           <tspan
             x="-19.896"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Ball Check 2
           </tspan>
           <tspan
             x="-0.988"
             y="31.2"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Valve
           </tspan>
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="690.466"
           y1="390.344"
           x2="690.466"
@@ -2666,48 +2666,48 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <g id="Heand_Valve_8_">
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="690.468"
             cy="366.599"
             r="5.331"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="679.952"
             y1="343.299"
             x2="701.276"
             y2="343.432"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="701.276"
             y1="343.432"
             x2="694.034"
             y2="362.641"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="679.952"
             y1="343.299"
             x2="686.954"
             y2="362.596"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="700.983"
             y1="390.344"
             x2="679.657"
             y2="390.211"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="679.657"
             y1="390.211"
             x2="686.901"
             y2="371.002"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="700.983"
             y1="390.344"
             x2="693.981"
@@ -2715,94 +2715,94 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="690.614"
           cy="324.99"
           r="1.083"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="690.614"
           y1="324.693"
           x2="690.614"
           y2="342.801"
         />
         <text transform="matrix(1 0 0 1 633.8501 353.1118)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             CO2
           </tspan>
           <tspan
             x="-23.075"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Ball Transfer
           </tspan>
           <tspan
             x="-2.704"
             y="31.2"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Valve
           </tspan>
         </text>
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="690.47"
           cy="480.142"
           r="1.083"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="745.405"
           y1="480.141"
           x2="689.735"
           y2="480.141"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="621.784"
           y1="480.141"
           x2="609.581"
           y2="480.141"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="690.761"
           y1="497.118"
           x2="690.761"
           y2="479.323"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="609.611"
           y1="497.118"
           x2="609.611"
           y2="479.777"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="745.405"
           y1="497.118"
           x2="745.405"
           y2="479.777"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="609.581"
           y1="555.225"
           x2="609.581"
           y2="537.884"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="690.47"
           y1="548.18"
           x2="690.47"
           y2="542.975"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="745.405"
           y1="544.585"
           x2="745.405"
@@ -2810,48 +2810,48 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <g id="Heand_Valve_7_">
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="645.416"
             cy="480.143"
             r="5.331"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="668.716"
             y1="469.626"
             x2="668.583"
             y2="490.952"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="668.583"
             y1="490.952"
             x2="649.374"
             y2="483.708"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="668.716"
             y1="469.626"
             x2="649.419"
             y2="476.628"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="621.671"
             y1="490.659"
             x2="621.804"
             y2="469.332"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="621.804"
             y1="469.332"
             x2="641.013"
             y2="476.577"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="621.671"
             y1="490.659"
             x2="640.968"
@@ -2859,7 +2859,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="690.47"
           y1="480.144"
           x2="668.583"
@@ -2868,23 +2868,23 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
       </g>
       <g id="CO2_Line">
         <circle
-          style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+          style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
           cx="36.69"
           cy="324.693"
           r="0.991"
         />
         <g id="Electro_Valve_7_">
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
-            points="417.759,314.398 436.545,325.232 417.769,336.083 			
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
+            points="417.759,314.398 436.545,325.232 417.769,336.083
 				"
           />
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             points="455.331,336.083 436.545,325.25 455.322,314.398 			"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="436.545"
             y1="325.232"
             x2="436.545"
@@ -2893,66 +2893,66 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <rect
             x="430.811"
             y="281.759"
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             width="11.467"
             height="22.399"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="430.811"
             y1="294.124"
             x2="442.278"
             y2="294.124"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="442.278"
             y1="294.124"
             x2="451.047"
             y2="286.847"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="451.047"
             y1="286.847"
             x2="451.047"
             y2="274.499"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="436.545"
             y1="281.759"
             x2="436.545"
             y2="274.499"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="430.811"
             y1="294.124"
             x2="423.151"
             y2="296.329"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="423.151"
             y1="296.329"
             x2="423.151"
             y2="274.499"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="423.151"
             cy="272.851"
             r="1.646"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="436.545"
             cy="272.851"
             r="1.647"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="451.046"
             cy="272.851"
             r="1.647"
@@ -2960,22 +2960,22 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <polygon
             style="
               fill: #ffffff;
-              stroke: #000000;
+              stroke: currentColor;
               stroke-width: 0.5;
               stroke-miterlimit: 10;
             "
-            points="437.354,272.22 436.545,273.483 
+            points="437.354,272.22 436.545,273.483
 				435.737,272.22 			"
           />
         </g>
         <text transform="matrix(1 0 0 1 400.7466 249.832)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             CO2 Cooling
           </tspan>
           <tspan
             x="-1.3"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Electro Valve
           </tspan>
@@ -2984,24 +2984,24 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <rect
             x="24.671"
             y="480.838"
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             width="24.333"
             height="97.313"
           />
           <path
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             d="M24.671,480.838c0-5.84,5.441-10.566,12.166-10.566"
           />
           <path
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             d="M49.004,480.838c0-5.84-5.442-10.566-12.167-10.566"
           />
           <polygon
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             points="41.058,462.483 36.837,469.793 32.616,462.483 			"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="36.837"
             y1="470.272"
             x2="36.837"
@@ -3009,28 +3009,28 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="36.837"
           y1="462.483"
           x2="36.837"
           y2="325.685"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="36.837"
           y1="324.693"
           x2="127.907"
           y2="324.693"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="175.175"
           y1="325.685"
           x2="418.093"
           y2="325.685"
         />
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="839.188"
           y1="324.693"
           x2="455.331"
@@ -3038,48 +3038,48 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <g id="Heand_Valve_4_">
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="151.875"
             cy="324.694"
             r="5.331"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="175.175"
             y1="314.178"
             x2="175.042"
             y2="335.502"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="175.042"
             y1="335.502"
             x2="155.833"
             y2="328.26"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="175.175"
             y1="314.178"
             x2="155.878"
             y2="321.18"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="128.13"
             y1="335.209"
             x2="128.263"
             y2="313.883"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="128.263"
             y1="313.883"
             x2="147.472"
             y2="321.127"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="128.13"
             y1="335.209"
             x2="147.427"
@@ -3087,47 +3087,47 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <text transform="matrix(1 0 0 1 120.667 292.959)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             CO2 Initial
           </tspan>
           <tspan
             x="2.789"
             y="15.599"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Ball Valve
           </tspan>
         </text>
         <g id="Pressure_gauge_1_1_">
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="231.642"
             y1="302.333"
             x2="231.642"
             y2="327.633"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="231.642"
             cy="290.994"
             r="11.338"
           />
           <line
-            style="stroke: #000000; stroke-miterlimit: 10"
+            style="stroke: currentColor; stroke-miterlimit: 10"
             x1="225.153"
             y1="300.342"
             x2="235.527"
             y2="283.932"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="235.845"
             y1="283.693"
             x2="234.813"
             y2="292.391"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="235.845"
             y1="283.693"
             x2="228.01"
@@ -3136,14 +3136,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         </g>
         <g id="Pressure_gauge_1_4_">
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="231.641"
             y1="325.241"
             x2="231.641"
             y2="340.161"
           />
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="231.641"
             cy="351.499"
             r="11.338"
@@ -3167,48 +3167,48 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         </g>
         <g id="Heand_Valve_5_">
           <circle
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             cx="863.155"
             cy="324.842"
             r="5.331"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="886.455"
             y1="314.327"
             x2="886.322"
             y2="335.65"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="886.322"
             y1="335.65"
             x2="867.113"
             y2="328.409"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="886.455"
             y1="314.327"
             x2="867.158"
             y2="321.329"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="839.41"
             y1="335.357"
             x2="839.543"
             y2="314.032"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="839.543"
             y1="314.032"
             x2="858.752"
             y2="321.276"
           />
           <line
-            style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+            style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
             x1="839.41"
             y1="335.357"
             x2="858.707"
@@ -3216,19 +3216,19 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           />
         </g>
         <text transform="matrix(1 0 0 1 830.4424 292.9595)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             CO2 Outlet
           </tspan>
           <tspan
             x="5.188"
             y="15.6"
-            style="font-family: 'Lato-Regular'; font-size: 13"
+            style="font-size: 13"
           >
             Ball Valve
           </tspan>
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1030.854"
           y1="325.685"
           x2="886.1"
@@ -3255,18 +3255,18 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
-          points="800.771,258.943 800.771,273.543 
+          points="800.771,258.943 800.771,273.543
 			788.132,266.244 775.488,258.943 788.132,251.645 800.771,244.345 		"
         />
         <text
           transform="matrix(1 0 0 1 720.5342 265.5654)"
-          style="font-family: 'Lato-Regular'; font-size: 18"
+          style="font-size: 18"
         >
           CAM1
         </text>
       </g>
       <circle
-        style="stroke: #000000; stroke-width: 2; stroke-miterlimit: 10"
+        style="stroke: currentColor; stroke-width: 2; stroke-miterlimit: 10"
         cx="231.644"
         cy="325.649"
         r="0.991"
@@ -3292,12 +3292,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
-          points="93.424,74.304 85.519,86.579 
+          points="93.424,74.304 85.519,86.579
 			78.844,73.598 72.168,60.614 86.75,61.324 101.329,62.031 		"
         />
         <text
           transform="matrix(0.8407 0.5415 -0.5415 0.8407 22.3882 36.4868)"
-          style="font-family: 'Lato-Regular'; font-size: 18"
+          style="font-size: 18"
         >
           CAM2
         </text>
@@ -3311,7 +3311,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="54.253"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -3327,12 +3327,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 686.3369 66.3706)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           GSE Temperature
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="678.238"
           y1="70.923"
           x2="809.2"
@@ -3347,7 +3347,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 681.4717 83.9951)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           LPB
         </text>
@@ -3361,12 +3361,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="lpb-temperature"
           transform="matrix(1 0 0 1 756.876 83.1846)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           60 °C
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="678.321"
           y1="86.443"
           x2="809.117"
@@ -3381,7 +3381,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 681.4717 98.6182)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           PCC
         </text>
@@ -3395,12 +3395,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="pcc-temperature"
           transform="matrix(1 0 0 1 756.874 98.6182)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           60 °C
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="677.881"
           y1="102.682"
           x2="808.677"
@@ -3415,7 +3415,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 681.4717 114.9409)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           Companion
         </text>
@@ -3430,7 +3430,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="companion-temperature"
           transform="matrix(1 0 0 1 756.874 114.9409)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           60 °C
         </text>
@@ -3442,7 +3442,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="54.233"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -3458,12 +3458,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 327.209 68)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           SwitchBoard-2 Batteries
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="325.772"
           y1="70.903"
           x2="480.21"
@@ -3478,7 +3478,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 328.6465 83.1968)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           SB battery 3V3
         </text>
@@ -3493,12 +3493,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="sb-2-battery-voltage-3V3"
           transform="matrix(1 0 0 1 430.1865 83.1968)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           3.3 V
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="325.486"
           y1="86.423"
           x2="479.924"
@@ -3513,7 +3513,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 328.6465 99.4341)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           SB battery
         </text>
@@ -3528,12 +3528,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="sb-2-battery-voltage-12V-1"
           transform="matrix(1 0 0 1 430.1865 100.1748)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           12 V
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="326.52"
           y1="102.662"
           x2="480.958"
@@ -3548,7 +3548,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 329.0591 114.3384)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           SB battery
         </text>
@@ -3563,7 +3563,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="sb-2-battery-voltage-12V-2"
           transform="matrix(1 0 0 1 430.1865 114.3384)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           12 V
         </text>
@@ -3575,7 +3575,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="54.247"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -3591,12 +3591,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 145.7915 68.0176)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           SwitchBoard-1Batteries
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="142.915"
           y1="70.929"
           x2="297.038"
@@ -3611,7 +3611,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 146.0967 82.9233)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           SB battery
         </text>
@@ -3626,12 +3626,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="sb-1-battery-voltage-3V3"
           transform="matrix(1 0 0 1 246.9028 83.9634)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           3.3 V
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="142.915"
           y1="86.462"
           x2="297.038"
@@ -3646,7 +3646,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 145.5645 98.6323)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           SB battery
         </text>
@@ -3661,12 +3661,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="sb-1-battery-voltage-12V-1"
           transform="matrix(1 0 0 1 246.9028 98.6323)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           12 V
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="143.443"
           y1="102.7"
           x2="297.567"
@@ -3681,7 +3681,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 146.2041 114.0732)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           SB battery
         </text>
@@ -3696,7 +3696,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="sb-1-battery-voltage-12V-2"
           transform="matrix(1 0 0 1 246.9028 114.0732)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           12 V
         </text>
@@ -3706,7 +3706,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           <path
             style="
               fill: none;
-              stroke: #000000;
+              stroke: currentColor;
               stroke-width: 2;
               stroke-miterlimit: 10;
             "
@@ -3718,7 +3718,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <line
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -3729,7 +3729,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(0.9565 0 0 1 285.8408 34.1392)"
-          style="font-family: 'Lato-Regular'; font-size: 20"
+          style="font-size: 20"
         >
           Ground Support Equipment (GSE) - Stage 0
         </text>
@@ -3741,7 +3741,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="327.303"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -3757,12 +3757,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 1116.5713 347.8071)"
-          style="font-family: 'Lato-Regular'; font-size: 21"
+          style="font-size: 21"
         >
           Oxidizer Tank
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1084.479"
           y1="351.555"
           x2="1271.374"
@@ -3791,12 +3791,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="oxidizer-pressure"
           transform="matrix(1 0 0 1 1190.7393 370.186)"
-          style="font-family: 'Lato-Regular'; font-size: 17"
+          style="font-size: 17"
         >
           50 bar
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1084.479"
           y1="374.133"
           x2="1271.374"
@@ -3812,7 +3812,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="oxidizer-weight"
           transform="matrix(1 0 0 1 1190.7393 391.5103)"
-          style="font-family: 'Lato-Regular'; font-size: 17"
+          style="font-size: 17"
         >
           16 kg
         </text>
@@ -3830,7 +3830,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           Oxi. Weight
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1084.479"
           y1="396.583"
           x2="1271.374"
@@ -3860,7 +3860,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="oxidizer-flow-rate"
           transform="matrix(1 0 0 1 1190.7393 412.2202)"
-          style="font-family: 'Lato-Regular'; font-size: 17"
+          style="font-size: 17"
         >
           0.1 g/s
         </text>
@@ -3872,7 +3872,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="505.752"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -3881,7 +3881,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 170.0098 525.8657)"
-          style="font-family: 'Lato-Regular'; font-size: 18"
+          style="font-size: 18"
         >
           N2O Pressure in
         </text>
@@ -3889,7 +3889,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <line
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -3901,7 +3901,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="n2o-pressure-in"
           transform="matrix(1 0 0 1 348.1118 525.019)"
-          style="font-family: 'Lato-Regular'; font-size: 18"
+          style="font-size: 18"
         >
           60 bar
         </text>
@@ -3913,7 +3913,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="545.45"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -3922,7 +3922,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 169.0142 565.563)"
-          style="font-family: 'Lato-Regular'; font-size: 18"
+          style="font-size: 18"
         >
           N2O Pressure out
         </text>
@@ -3930,7 +3930,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <line
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -3942,7 +3942,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="n2o-pressure-out"
           transform="matrix(1 0 0 1 348.1118 565.2622)"
-          style="font-family: 'Lato-Regular'; font-size: 18"
+          style="font-size: 18"
         >
           60 bar
         </text>
@@ -3954,7 +3954,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="207.437"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -3970,14 +3970,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1.0716 0 0 1 1139.7891 224.27)"
-          style="font-family: 'Lato-Regular'; font-size: 17"
+          style="font-size: 17"
         >
           Heating
         </text>
 
         <line
           id="line-btn_4_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1118.13"
           y1="228.238"
           x2="1226.628"
@@ -3997,7 +3997,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4010,7 +4010,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4021,7 +4021,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4033,7 +4033,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4046,7 +4046,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4058,7 +4058,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.4272 0 0 1 1180.7969 246.3413)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               Off
             </text>
@@ -4076,7 +4076,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4088,7 +4088,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4101,7 +4101,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4112,7 +4112,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4123,7 +4123,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4135,7 +4135,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.4272 0 0 1 1138.0781 246.3286)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               On
             </text>
@@ -4149,7 +4149,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="269.133"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -4165,14 +4165,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1.0716 0 0 1 1147.4023 285.9653)"
-          style="font-family: 'Lato-Regular'; font-size: 17"
+          style="font-size: 17"
         >
           Soyuz
         </text>
 
         <line
           id="line-btn_3_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1118.104"
           y1="289.935"
           x2="1226.61"
@@ -4192,7 +4192,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4205,7 +4205,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4216,7 +4216,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4228,7 +4228,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4241,7 +4241,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4253,7 +4253,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.4273 0 0 1 1180.7793 308.0396)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               Off
             </text>
@@ -4271,7 +4271,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4283,7 +4283,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4296,7 +4296,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4307,7 +4307,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4318,7 +4318,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4330,7 +4330,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.4273 0 0 1 1138.0537 308.0249)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               On
             </text>
@@ -4344,7 +4344,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="532.354"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -4360,14 +4360,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 987.1699 551.0796)"
-          style="font-family: 'Lato-Regular'; font-size: 19"
+          style="font-size: 19"
         >
           Engine ignition
         </text>
 
         <line
           id="line-btn"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="981.604"
           y1="555.179"
           x2="1118.141"
@@ -4387,7 +4387,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4400,7 +4400,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4411,7 +4411,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4423,7 +4423,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4436,7 +4436,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4448,7 +4448,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 1055.1348 575.2153)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               Off
             </text>
@@ -4466,7 +4466,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4478,7 +4478,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4491,7 +4491,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4502,7 +4502,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4513,7 +4513,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4525,7 +4525,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 1011.3887 575.1997)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               On
             </text>
@@ -4539,7 +4539,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="20.166"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -4555,14 +4555,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 1165.8076 37.7935)"
-          style="font-family: 'Lato-Regular'; font-size: 17"
+          style="font-size: 17"
         >
           Fan
         </text>
 
         <line
           id="line-btn_10_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1121.354"
           y1="41.666"
           x2="1219.461"
@@ -4582,7 +4582,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4595,7 +4595,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4606,7 +4606,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4618,7 +4618,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4631,7 +4631,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4643,7 +4643,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 1178.5303 60.3589)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               Off
             </text>
@@ -4661,7 +4661,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4673,7 +4673,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4686,7 +4686,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4697,7 +4697,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4708,7 +4708,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4727,7 +4727,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           </g>
         </g>
         <path
-          style="fill: #010101"
+          style="fill: currentColor"
           d="M1155.418,28.083c-0.754,0-1.449,0.122-2.066,0.345l0.334-3.303c0.029-0.28-0.219-0.508-0.5-0.472
 			c-2.139,0.268-3.791,2.079-3.791,4.274c0,0.753,0.121,1.451,0.344,2.067l-3.303-0.333c-0.279-0.029-0.51,0.217-0.473,0.499
 			c0.27,2.138,2.08,3.791,4.275,3.791c0.752,0,1.449-0.12,2.064-0.344l-0.332,3.303c-0.027,0.28,0.219,0.507,0.5,0.473
@@ -4743,7 +4743,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="175.029"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -4759,14 +4759,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 926.8184 192.0049)"
-          style="font-family: 'Lato-Regular'; font-size: 17"
+          style="font-size: 17"
         >
           Bleed Valve
         </text>
 
         <line
           id="line-btn_2_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="918.64"
           y1="196.527"
           x2="1023.283"
@@ -4786,7 +4786,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4799,7 +4799,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4810,7 +4810,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4822,7 +4822,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4835,7 +4835,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4847,7 +4847,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 974.791 215.2349)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               Close
             </text>
@@ -4865,7 +4865,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4877,7 +4877,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4890,7 +4890,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4901,7 +4901,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4912,7 +4912,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4924,7 +4924,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 934.0762 215.2207)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               Open
             </text>
@@ -4938,7 +4938,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="427.565"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -4954,14 +4954,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 403.3638 443.2378)"
-          style="font-family: 'Lato-Regular'; font-size: 15.9731"
+          style="font-size: 15.9731"
         >
           N2O Valve
         </text>
 
         <line
           id="line-btn_6_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="395.305"
           y1="446.865"
           x2="489.251"
@@ -4981,7 +4981,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -4994,7 +4994,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5005,7 +5005,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5017,7 +5017,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5030,7 +5030,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5042,7 +5042,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 445.7158 463.6616)"
-              style="font-family: 'Lato-Regular'; font-size: 10"
+              style="font-size: 10"
             >
               Close
             </text>
@@ -5060,7 +5060,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5072,7 +5072,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5085,7 +5085,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5096,7 +5096,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5107,7 +5107,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5119,7 +5119,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 409.1631 463.6499)"
-              style="font-family: 'Lato-Regular'; font-size: 10"
+              style="font-size: 10"
             >
               Open
             </text>
@@ -5133,7 +5133,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="266.858"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -5149,14 +5149,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 490.6758 281.957)"
-          style="font-family: 'Lato-Regular'; font-size: 16"
+          style="font-size: 16"
         >
           CO2 Valve
         </text>
 
         <line
           id="line-btn_7_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="481.011"
           y1="286.159"
           x2="574.958"
@@ -5176,7 +5176,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5189,7 +5189,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5200,7 +5200,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5212,7 +5212,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5225,7 +5225,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5237,7 +5237,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 531.4229 302.9565)"
-              style="font-family: 'Lato-Regular'; font-size: 10"
+              style="font-size: 10"
             >
               Close
             </text>
@@ -5255,7 +5255,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5267,7 +5267,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5280,7 +5280,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5291,7 +5291,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5302,7 +5302,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5314,7 +5314,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 494.8701 302.9429)"
-              style="font-family: 'Lato-Regular'; font-size: 10"
+              style="font-size: 10"
             >
               Open
             </text>
@@ -5328,7 +5328,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="266.441"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -5344,14 +5344,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 314.8335 283.1201)"
-          style="font-family: 'Lato-Regular'; font-size: 17"
+          style="font-size: 17"
         >
           Pump
         </text>
 
         <line
           id="line-btn_5_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="289.506"
           y1="286.498"
           x2="387.134"
@@ -5371,7 +5371,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5384,7 +5384,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5395,7 +5395,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5407,7 +5407,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5420,7 +5420,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5432,7 +5432,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 345.8975 303.9546)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               Off
             </text>
@@ -5450,7 +5450,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5462,7 +5462,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5475,7 +5475,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5486,7 +5486,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5497,7 +5497,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5509,7 +5509,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 307.4546 303.9409)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               On
             </text>
@@ -5523,7 +5523,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="142.751"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -5539,14 +5539,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 700.0244 161.4766)"
-          style="font-family: 'Lato-Regular'; font-size: 19"
+          style="font-size: 19"
         >
           LPB SAVE
         </text>
 
         <line
           id="line-btn_11_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="679.462"
           y1="165.576"
           x2="808.667"
@@ -5566,7 +5566,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5579,7 +5579,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5590,7 +5590,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5602,7 +5602,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5615,7 +5615,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5627,7 +5627,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 752.9932 185.6123)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               Off
             </text>
@@ -5645,7 +5645,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5657,7 +5657,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5670,7 +5670,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5681,7 +5681,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5692,7 +5692,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5704,7 +5704,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 709.2471 185.5967)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               On
             </text>
@@ -5718,7 +5718,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="54.253"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -5734,12 +5734,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 504.2236 68.02)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           RelayBoard Batteries
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="502.787"
           y1="70.923"
           x2="657.225"
@@ -5754,7 +5754,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 505.6611 83.2168)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           RB battery A +
         </text>
@@ -5769,12 +5769,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="rb-battery-voltage-analog-1"
           transform="matrix(1 0 0 1 607.2012 83.2168)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           3.3 V
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="502.5"
           y1="86.443"
           x2="656.939"
@@ -5789,7 +5789,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 505.6611 99.4541)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           RB battery A -
         </text>
@@ -5804,12 +5804,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="rb-battery-voltage-analog-2"
           transform="matrix(1 0 0 1 607.2012 100.1948)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           12 V
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="503.535"
           y1="102.682"
           x2="657.973"
@@ -5824,7 +5824,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 507.0737 114.3584)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           RB battery 12V
         </text>
@@ -5839,7 +5839,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="rb-battery-voltage-12V"
           transform="matrix(1 0 0 1 607.2012 114.3584)"
-          style="font-family: 'Lato-Regular'; font-size: 12"
+          style="font-size: 12"
         >
           12 V
         </text>
@@ -5851,7 +5851,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="246.756"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -5860,7 +5860,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 20.4434 266.8691)"
-          style="font-family: 'Lato-Regular'; font-size: 18"
+          style="font-size: 18"
         >
           CO2 Pressure in
         </text>
@@ -5868,7 +5868,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <line
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -5880,7 +5880,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="co2-pressure-in"
           transform="matrix(1 0 0 1 198.5454 266.0225)"
-          style="font-family: 'Lato-Regular'; font-size: 18"
+          style="font-size: 18"
         >
           60 bar
         </text>
@@ -5892,7 +5892,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="142.37"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -5908,14 +5908,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 192.7593 162.1035)"
-          style="font-family: 'Lato-Regular'; font-size: 19.9352"
+          style="font-size: 19.9352"
         >
           Camera 1
         </text>
 
         <line
           id="line-btn_8_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="159.907"
           y1="166.458"
           x2="281.103"
@@ -5935,7 +5935,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5948,7 +5948,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5959,7 +5959,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5971,7 +5971,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5984,7 +5984,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -5996,7 +5996,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 229.6006 187.1758)"
-              style="font-family: 'Lato-Regular'; font-size: 12.3243"
+              style="font-size: 12.3243"
             >
               Off
             </text>
@@ -6014,7 +6014,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6026,7 +6026,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6039,7 +6039,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6050,7 +6050,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6061,7 +6061,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6080,14 +6080,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           </g>
         </g>
         <path
-          style="fill: #010101"
+          style="fill: currentColor"
           d="M180.527,148.134h-7.843c-1.856,0-3.361,1.506-3.361,3.361v6.722c0,1.856,1.505,3.361,3.361,3.361
 			h7.843c1.855,0,3.361-1.505,3.361-3.361v-6.722C183.888,149.64,182.383,148.134,180.527,148.134z M171.564,151.495
 			c0-0.619,0.501-1.121,1.121-1.121h7.843c0.619,0,1.12,0.501,1.12,1.121v6.722c0,0.62-0.501,1.121-1.12,1.121h-7.843
 			c-0.62,0-1.121-0.501-1.121-1.121V151.495z"
         />
         <path
-          style="fill: #010101"
+          style="fill: currentColor"
           d="M186.615,149.451l-3.885,2.667c-0.301,0.208-0.482,0.547-0.486,0.913l-0.036,3.603
 			c-0.004,0.373,0.179,0.723,0.486,0.935l3.921,2.692c0.744,0.511,1.755-0.022,1.755-0.923v-8.963
 			C188.37,149.473,187.359,148.94,186.615,149.451z M186.129,157.208l-1.674-1.148l0.024-2.423l1.65-1.133V157.208z"
@@ -6100,7 +6100,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="142.37"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -6116,14 +6116,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 375.9907 162.1035)"
-          style="font-family: 'Lato-Regular'; font-size: 19.9352"
+          style="font-size: 19.9352"
         >
           Camera 2
         </text>
 
         <line
           id="line-btn_12_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="343.139"
           y1="166.458"
           x2="464.334"
@@ -6143,7 +6143,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6156,7 +6156,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6167,7 +6167,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6179,7 +6179,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6192,7 +6192,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6204,7 +6204,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 412.832 187.1758)"
-              style="font-family: 'Lato-Regular'; font-size: 12.3243"
+              style="font-size: 12.3243"
             >
               Off
             </text>
@@ -6222,7 +6222,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6234,7 +6234,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6247,7 +6247,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6258,7 +6258,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6269,7 +6269,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6288,14 +6288,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           </g>
         </g>
         <path
-          style="fill: #010101"
+          style="fill: currentColor"
           d="M363.759,148.134h-7.843c-1.856,0-3.361,1.506-3.361,3.361v6.722c0,1.856,1.505,3.361,3.361,3.361
 			h7.843c1.855,0,3.361-1.505,3.361-3.361v-6.722C367.12,149.64,365.614,148.134,363.759,148.134z M354.795,151.495
 			c0-0.619,0.501-1.121,1.121-1.121h7.843c0.619,0,1.12,0.501,1.12,1.121v6.722c0,0.62-0.501,1.121-1.12,1.121h-7.843
 			c-0.62,0-1.121-0.501-1.121-1.121V151.495z"
         />
         <path
-          style="fill: #010101"
+          style="fill: currentColor"
           d="M369.846,149.451l-3.885,2.667c-0.301,0.208-0.482,0.547-0.486,0.913l-0.036,3.603
 			c-0.004,0.373,0.179,0.723,0.486,0.935l3.921,2.692c0.744,0.511,1.755-0.022,1.755-0.923v-8.963
 			C371.601,149.473,370.59,148.94,369.846,149.451z M369.36,157.208l-1.674-1.148l0.024-2.423l1.65-1.133V157.208z"
@@ -6308,7 +6308,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="142.751"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -6324,14 +6324,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 535.6802 161.4766)"
-          style="font-family: 'Lato-Regular'; font-size: 19"
+          style="font-size: 19"
         >
           External 1
         </text>
 
         <line
           id="line-btn_13_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="515.117"
           y1="165.576"
           x2="644.322"
@@ -6351,7 +6351,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6364,7 +6364,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6375,7 +6375,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6387,7 +6387,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6400,7 +6400,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6412,7 +6412,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 588.6484 185.6123)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               Off
             </text>
@@ -6430,7 +6430,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6442,7 +6442,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6455,7 +6455,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6466,7 +6466,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6477,7 +6477,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6489,7 +6489,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 544.9023 185.5967)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               On
             </text>
@@ -6503,7 +6503,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="532.125"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -6519,14 +6519,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 1148.3125 550.8511)"
-          style="font-family: 'Lato-Regular'; font-size: 19"
+          style="font-size: 19"
         >
           Engine close
         </text>
 
         <line
           id="line-btn_9_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1130.403"
           y1="554.951"
           x2="1266.939"
@@ -6546,7 +6546,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6559,7 +6559,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6570,7 +6570,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6582,7 +6582,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6595,7 +6595,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6607,7 +6607,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 1203.9336 574.9868)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               Off
             </text>
@@ -6625,7 +6625,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6637,7 +6637,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6650,7 +6650,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6661,7 +6661,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6672,7 +6672,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -6684,7 +6684,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 1160.1875 574.9712)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               On
             </text>
@@ -6698,7 +6698,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="133.964"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -6707,14 +6707,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 849.8467 153.9639)"
-          style="font-family: 'Lato-Regular'; font-size: 18"
+          style="font-size: 18"
         >
           Bleed time
         </text>
         <line
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -6727,7 +6727,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="relief-valve-open-time"
           transform="matrix(1 0 0 1 949.8896 153.9639)"
-          style="font-family: 'Lato-Regular'; font-size: 18"
+          style="font-size: 18"
         >
           04:20:00
         </text>
@@ -6739,7 +6739,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="46.484"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -6755,12 +6755,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 888.8623 61.8491)"
-          style="font-family: 'Lato-Regular'; font-size: 15"
+          style="font-size: 15"
         >
           Calculated Diff
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="865.607"
           y1="67.314"
           x2="1017.881"
@@ -6775,7 +6775,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 871.1172 82.6836)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           N2O in/out
         </text>
@@ -6789,12 +6789,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="n2o-in-out-pressure"
           transform="matrix(1 0 0 1 963.3545 82.6841)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           60 bar
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="865.607"
           y1="88.877"
           x2="1017.715"
@@ -6810,7 +6810,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="N2O_out_x2F_tank"
           transform="matrix(1 0 0 1 871.1172 105.5396)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           N2O out/tank
         </text>
@@ -6825,7 +6825,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="n2o-out-tank-pressure"
           transform="matrix(1 0 0 1 963.5205 105.1089)"
-          style="font-family: 'Lato-Regular'; font-size: 14"
+          style="font-size: 14"
         >
           60 bar
         </text>
@@ -6837,7 +6837,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="441.41"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -6853,12 +6853,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 1090.6123 457.4331)"
-          style="font-family: 'Lato-Regular'; font-size: 16"
+          style="font-size: 16"
         >
           Hybrid Control Unit
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1077.918"
           y1="461.861"
           x2="1249.738"
@@ -6873,7 +6873,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 1084.3887 474.2026)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           Battery-1
         </text>
@@ -6887,12 +6887,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="hecu-battery-1"
           transform="matrix(1 0 0 1 1188.4502 474.2026)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           3.3 V
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1077.918"
           y1="479.057"
           x2="1249.738"
@@ -6906,7 +6906,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           height="14.81"
         />
         <text transform="matrix(1 0 0 1 1084.3887 511.1851)">
-          <tspan x="0" y="0" style="font-family: 'Lato-Regular'; font-size: 13">
+          <tspan x="0" y="0" style="font-size: 13">
             Servo state
           </tspan>
           <tspan
@@ -6929,12 +6929,12 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="hecu-servo-state"
           transform="matrix(1 0 0 1 1189.0498 510.1636)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           Close
         </text>
         <line
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1078.18"
           y1="496.936"
           x2="1250"
@@ -6949,7 +6949,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 1084.3887 491.894)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           Battery-2
         </text>
@@ -6963,7 +6963,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         <text
           id="hecu-battery-2"
           transform="matrix(1 0 0 1 1189.0498 491.894)"
-          style="font-family: 'Lato-Regular'; font-size: 13"
+          style="font-size: 13"
         >
           3.3 V
         </text>
@@ -6991,7 +6991,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 479.0103 505.9663)"
-          style="font-family: 'Lato-Regular'; font-size: 19"
+          style="font-size: 19"
         >
           Emergency1
         </text>
@@ -7018,7 +7018,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7031,7 +7031,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7042,7 +7042,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7054,7 +7054,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7067,7 +7067,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7079,7 +7079,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 535.561 530.8774)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               Close
             </text>
@@ -7097,7 +7097,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7109,7 +7109,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7122,7 +7122,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7133,7 +7133,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7144,7 +7144,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7156,7 +7156,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 491.9995 530.8618)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               Open
             </text>
@@ -7186,7 +7186,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1 0 0 1 853.373 550.2271)"
-          style="font-family: 'Lato-Regular'; font-size: 19"
+          style="font-size: 19"
         >
           Emergency2
         </text>
@@ -7213,7 +7213,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7226,7 +7226,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7237,7 +7237,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7249,7 +7249,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7262,7 +7262,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7274,7 +7274,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 909.9238 575.1382)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               Close
             </text>
@@ -7292,7 +7292,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7304,7 +7304,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7317,7 +7317,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7328,7 +7328,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7339,7 +7339,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7351,7 +7351,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.3319 0 0 1 866.3623 575.1226)"
-              style="font-family: 'Lato-Regular'; font-size: 12"
+              style="font-size: 12"
             >
               Open
             </text>
@@ -7365,7 +7365,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="145.447"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -7381,14 +7381,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1.0716 0 0 1 1121.5195 160.1338)"
-          style="font-family: 'Lato-Regular'; font-size: 15"
+          style="font-size: 15"
         >
           BareMinimum
         </text>
 
         <line
           id="line-btn_15_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1117.97"
           y1="166.248"
           x2="1226.468"
@@ -7408,7 +7408,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7421,7 +7421,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7432,7 +7432,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7444,7 +7444,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7457,7 +7457,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7469,7 +7469,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.4272 0 0 1 1180.6367 184.3516)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               Off
             </text>
@@ -7487,7 +7487,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7499,7 +7499,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7512,7 +7512,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7523,7 +7523,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7534,7 +7534,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7546,7 +7546,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.4272 0 0 1 1137.918 184.3389)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               On
             </text>
@@ -7560,7 +7560,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
           y="84.964"
           style="
             fill: none;
-            stroke: #000000;
+            stroke: currentColor;
             stroke-width: 2;
             stroke-miterlimit: 10;
           "
@@ -7576,14 +7576,14 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
         />
         <text
           transform="matrix(1.0716 0 0 1 1130.7715 99.6509)"
-          style="font-family: 'Lato-Regular'; font-size: 15"
+          style="font-size: 15"
         >
           Telemetry
         </text>
 
         <line
           id="line-btn_16_"
-          style="fill: none; stroke: #000000; stroke-miterlimit: 10"
+          style="fill: none; stroke: currentColor; stroke-miterlimit: 10"
           x1="1116.178"
           y1="105.765"
           x2="1224.676"
@@ -7603,7 +7603,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7616,7 +7616,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7627,7 +7627,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7639,7 +7639,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7652,7 +7652,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7664,7 +7664,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.4272 0 0 1 1178.8447 123.8687)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               Off
             </text>
@@ -7682,7 +7682,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7694,7 +7694,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <line
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7707,7 +7707,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <polyline
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7718,7 +7718,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7729,7 +7729,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
                 <path
                   style="
                     fill: none;
-                    stroke: #000000;
+                    stroke: currentColor;
                     stroke-width: 0.5;
                     stroke-linecap: round;
                     stroke-linejoin: round;
@@ -7741,7 +7741,7 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
             </g>
             <text
               transform="matrix(1.4272 0 0 1 1136.126 123.856)"
-              style="font-family: 'Lato-Regular'; font-size: 11"
+              style="font-size: 11"
             >
               On
             </text>
@@ -7750,4 +7750,3 @@ iIiIiKij/H9ZNRxiM1BVcwAAAABJRU5ErkJggg=="
       </g>
     </g>
   </svg>
-
