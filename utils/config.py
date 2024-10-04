@@ -15,6 +15,9 @@ class Config:
         parser.add_argument('--mqtt-host', help='mqtt host', type=str)
         parser.add_argument('--mqtt-port', help='mqtt port', type=int)
         parser.add_argument('--receiver-config', help="receiver config file", type=str)
+        parser.add_argument('--status-app', help="Status app url")
+        parser.add_argument('--profiles-config', help="profiles config file")
+
         cmd_line_args = vars(parser.parse_args())
         cfg_file_args = self.read_args_from_cfg_file(cmd_line_args.get("config"))
         for k, v in cmd_line_args.items():
@@ -27,6 +30,9 @@ class Config:
         self.mqtt_topic = cfg_file_args.get('mqtt_topic', 'pcc/in')
         self.mqtt_host = cfg_file_args.get('mqtt_host', 'localhost')
         self.mqtt_port = cfg_file_args.get('mqtt_port', 1883)
+        self.status_app = cfg_file_args.get('status-app', 'http://localhost:2138/')
+        self.profiles_config = cfg_file_args.get('profiles-config', 'profiles-config.json')
+
         self.receiver_config = cfg_file_args.get('receiver_config', 'app_config.json')
 
     def assign_args_from_cmd_line(self, args):
