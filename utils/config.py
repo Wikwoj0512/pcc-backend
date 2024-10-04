@@ -9,7 +9,7 @@ class Config:
             prog='Pcc backend',
             description='Running without args will load default config, use --config to specify config file or --console to specify command line arguments')
 
-        parser.add_argument('--config', help="Config file name", default="cofnig.yaml", type=str)
+        parser.add_argument('--config', help="Config file name", default="config.yaml", type=str)
         parser.add_argument('--pcc-port', help="port for pcc", type=int)
         parser.add_argument('--mqtt-topic', help='pcc in topic name', type=str)
         parser.add_argument('--mqtt-host', help='mqtt host', type=str)
@@ -44,4 +44,4 @@ class Config:
         return contents
 
     def __repr__(self):
-        return f"Hosting PCC on port {self.pcc_port}, recieving mqtt traffic from {self.mqtt_host}:{self.mqtt_port} on topic {self.mqtt_topic} and parsing it according to {self.receiver_config} and fetching from status app on {self.status_app}"
+        return f"Hosting PCC on port {self.pcc_port}, receiving mqtt traffic from {self.mqtt_host}:{self.mqtt_port} on topic {self.mqtt_topic} and parsing it according to {self.receiver_config} and fetching from status app on {self.status_app}"
