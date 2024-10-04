@@ -9,54 +9,39 @@ class Config:
             prog='Pcc backend',
             description='Running without args will load default config, use --config to specify config file or --console to specify command line arguments')
 
-        parser.add_argument('--config', help="Config file name")
-        parser.add_argument('--console', action='store_true')
-        parser.add_argument('--pcc-port', help="port for pcc")
-        parser.add_argument('--mqtt-topic', help='pcc in topic name')
-        parser.add_argument('--mqtt-host', help='mqtt host')
-        parser.add_argument('--mqtt-port', help='mqtt port')
-        parser.add_argument('--receiver-config', help="receiver config file")
-        parser.add_argument('--status-app', help="Status app url")
-        parser.add_argument('--profiles-config', help="profiles config file")
-        args = parser.parse_args()
+        parser.add_argument('--config', help="Config file name", default="cofnig.yaml", type=str)
+        parser.add_argument('--pcc-port', help="port for pcc", type=int)
+        parser.add_argument('--mqtt-topic', help='pcc in topic name', type=str)
+        parser.add_argument('--mqtt-host', help='mqtt host', type=str)
+        parser.add_argument('--mqtt-port', help='mqtt port', type=int)
+        parser.add_argument('--receiver-config', help="receiver config file", type=str)
+        cmd_line_args = vars(parser.parse_args())
+        cfg_file_args = self.read_args_from_cfg_file(cmd_line_args.get("config"))
+        for k, v in cmd_line_args.items():
+            if v is not None:
+                cfg_file_args[k] = v
 
-        if args.console:
-            self.analyze_console(args)
-            return
+        # assign
+        print(cfg_file_args)
+        self.pcc_port = cfg_file_args.get('pcc_port', 2137)
+        self.mqtt_topic = cfg_file_args.get('mqtt_topic', 'pcc/in')
+        self.mqtt_host = cfg_file_args.get('mqtt_host', 'localhost')
+        self.mqtt_port = cfg_file_args.get('mqtt_port', 1883)
+        self.receiver_config = cfg_file_args.get('receiver_config', 'app_config.json')
 
-        self.analyze_config_file(args.config if args.config else 'config.yaml')
+    def assign_args_from_cmd_line(self, args):
+        print(vars(args))
+        for arg in vars(args):
+            self[arg] = args[arg]
 
-    def analyze_console(self, args):
-        self.pcc_port = int(args.pcc_port) if args.pcc_port else 2137
-        self.mqtt_topic = args.mqtt_topic if args.mqtt_topic else 'pcc/in'
-        self.mqtt_host = args.mqtt_host if args.mqtt_host else 'localhost'
-        self.mqtt_port = int(args.mqtt_port) if args.mqtt_port else 1883
-        self.receiver_config = args.receiver_config if args.receiver_config else 'app_config.json'
-        self.status_app = args.status_app if args.status_app else 'http://localhost:2138/'
-        self.profiles_config = args.profiles_config if args.profiles_config else 'profiles-config.json'
-
-    def analyze_config_file(self, config_file):
+    def read_args_from_cfg_file(self, config_file):
+        contents = {}
         try:
             with open(config_file) as f:
                 contents = yaml.safe_load(f)
-            print(contents, type(contents))
-            self.pcc_port = int(contents.get('pcc-port', 2137))
-            self.mqtt_topic = contents.get('mqtt-topic', 'pcc/in')
-            self.mqtt_host = contents.get('mqtt-host', 'localhost')
-            self.mqtt_port = int(contents.get('mqtt-port', 1883))
-            self.receiver_config = contents.get('receiver-config', 'app_config.json')
-            self.status_app = contents.get('status-app', 'http://localhost:2138/')
-            self.profiles_config = contents.get('profiles-config', 'profiles-config.json')
-
         except Exception as e:
             print(e)
-            self.pcc_port = 2137
-            self.mqtt_topic = 'pcc/in'
-            self.mqtt_host = 'localhost'
-            self.mqtt_port = 1883
-            self.receiver_config = 'app_config.json'
-            self.status_app = 'http://localhost:2138/'
-            self.profiles_config = 'profiles-config.json'
+        return contents
 
     def __repr__(self):
         return f"Hosting PCC on port {self.pcc_port}, recieving mqtt traffic from {self.mqtt_host}:{self.mqtt_port} on topic {self.mqtt_topic} and parsing it according to {self.receiver_config} and fetching from status app on {self.status_app}"
