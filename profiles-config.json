@@ -1,21 +1,22 @@
-[
-  {
-    "origin": 100,
-    "field": "analog_in.raw",
-    "unit": "V",
-    "engine-test": {
-      "domId": "sb-1-battery-voltage-12V-1",
-      "modifierFunction": "highlighContainerWhenMoreThan",
-      "args": [
-        12
-      ]
-    }
-  },
-  {
-    "origin": 100,
-    "field": "value",
-    "engine-test": {
-      "domId": "sb-2-battery-voltage-12V-2"
+{
+  "110": {
+    "analog-in.raw": {
+      "profil-1": {
+        "id": "test-id",
+        "format": "string",
+        "modifiers": [
+          {
+            "name": "aaaa",
+            "args": ["a1", "a2", "a3"]
+          },{
+            "name": "bbbb",
+            "args": ["a1", "a2", "a3"]
+          },{
+            "name": "cccc",
+            "args": ["a1", "a2", "a3"]
+          }
+        ]
+      }
     }
   }
-]
+}

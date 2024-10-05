@@ -48,26 +48,24 @@ class MqttReceiver:
         self.sessions = {}
         self.raw_values = {}
         self.profiles_config = profiles_config
-        self.profiles_handler = None
+        self.profiles_handlers = None
 
         self.run_forever()
-
-    def connect_client(self):
-        self.client.subscribe(self.topic)
 
     def infinite_sender(self, socketio: SocketIO):
 
         self.socketio = socketio
         if self.profiles_config:
             try:
-                self.profiles_handler = ProfilesHandler(self.profiles_config, socketio)
+                self.profiles_handlers = ProfilesHandler.get_from_config(self.profiles_config, socketio)
             except Exception as e:
                 print(f'failed to create profiles handler: {e}')
 
         while self.running:
 
-            if self.profiles_handler is not None:
-                self.profiles_handler.emit()
+            if self.profiles_handlers is not None:
+                for handler in self.profiles_handlers:
+                    handler.emit()
             for session in self.sessions.values():
                 session.execute(self.data, socketio)
 
@@ -157,8 +155,9 @@ class MqttReceiver:
                 current_origin_value['keys'][key] = {'value': value}
 
                 message_keys.append(key)
-                if self.profiles_handler is not None:
-                    self.profiles_handler.add_value(origin, key, value)
+                if self.profiles_handlers is not None:
+                    for handler in self.profiles_handlers:
+                        handler.add_value(origin, key, value)
 
             key_names = self.get_origin_keys_display_names(origin, message_keys)
 
@@ -166,8 +165,9 @@ class MqttReceiver:
                 key_name = key['name']
                 current_origin_value['keys'][key_name] = {**key, **current_origin_value['keys'][key_name]}
             self.raw_values[origin] = current_origin_value
-            if self.profiles_handler is not None:
-                self.profiles_handler.emit_new()
+            if self.profiles_handlers is not None:
+                for handler in self.profiles_handlers:
+                    handler.emit_new()
         except Exception as e:
             print(f"unsupported message: {e}")
 
