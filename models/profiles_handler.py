@@ -12,20 +12,27 @@ class ProfilesHandler:
         self.socketio = socketio
         self.should_be_emited = False
 
-    def add_entity(self, field, info):
-        self.values[field] = {**info, "value": None}
+    def add_entities(self, field, info):
+        self.values[field] = [{**element, "value": None} for element in info]
 
     def add_value(self, origin, field, value):
         field_name = get_field_name(origin, field)
-        if self.values.get(field_name) is None:
+
+        entities = self.values.get(field_name)
+
+        if entities is None:
             return
 
         self.should_be_emited = True
-        self.values[field_name]['value'] = value
+        entities = [{**entity, 'value': value} for entity in entities]
+        self.values[field_name] = entities
 
     def emit(self, new: bool = False):
         if not new or self.should_be_emited:
-            emit_data = list(self.values.values())
+            emit_data = []
+            for element in self.values.values():
+                emit_data.extend(element)
+
             self.socketio.emit(f'profiles/{self.profile_id}', emit_data)
         self.should_be_emited = False
 
@@ -44,10 +51,15 @@ class ProfilesHandler:
                     raise ChildProcessError(
                         f"Invalid field type for key {field_name} in origin {origin_name}. Field should be a dictionary and is {type(fields)}")
                 for profile_name, info in profiles.items():
-                    if not isinstance(info, dict):
-                        raise ChildProcessError(
-                            f"Invalid field type for profile {profile_name} key {field_name} origin {origin_name}. Field should be a dictionary and is {type(fields)}")
+                    if isinstance(info, dict):
+                        info = [info, ]
+
+                    for i, value in enumerate(info):
+                        if not isinstance(value, dict):
+                            raise ChildProcessError(
+                                f"Invalid field type for profile {profile_name} key {field_name} origin {origin_name} value {i + 1}. Field should be a dictionary and is {type(fields)}")
                     profile_handler = profile_handlers.get(profile_name, cls(profile_name, socketio))
-                    profile_handler.add_entity(get_field_name(origin_name, field_name), info)
+
+                    profile_handler.add_entities(get_field_name(origin_name, field_name), info)
                     profile_handlers[profile_name] = profile_handler
         return list(profile_handlers.values())
