@@ -1,22 +1,51 @@
 {
-  "110": {
-    "analog-in.raw": {
-      "profil-1": {
-        "id": "test-id",
-        "format": "string",
+  "20": {
+    "cpuTemperature.value": {
+      "test": {
+        "id": "sb-1-battery-voltage-3V3",
+        "format": "%f v",
         "modifiers": [
           {
-            "name": "aaaa",
-            "args": ["a1", "a2", "a3"]
-          },{
-            "name": "bbbb",
-            "args": ["a1", "a2", "a3"]
-          },{
-            "name": "cccc",
-            "args": ["a1", "a2", "a3"]
+            "name": "highlightIfLT",
+            "args": [
+              60,
+              "#ff0000"
+            ]
           }
         ]
       }
+    }
+  },
+  "31": {
+    "switches.value": {
+      "test": [
+        {
+          "id": "sb-2-battery-voltage-3V3",
+          "format": "%.2f v",
+          "modifiers": [
+            {
+              "name": "highlightIfLT",
+              "args": [
+                512,
+                "#ff0000"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "camera-gse-off-btn-1",
+          "modifiers": [
+            {
+              "name": "highlightIfBitEq",
+              "args": [
+                3,
+                true,
+                "#00ff00"
+              ]
+            }
+          ]
+        }
+      ]
     }
   }
 }

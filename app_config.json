@@ -1,13 +1,10 @@
 {
   "origins": {
-    "110": {
-      "displayName": "origin 1",
+    "60": {
+      "displayName": "Tracker",
       "keys": {
-        "analog2.raw": "Analog 2 raw",
-        "analog2.scaled": "Analog 2 scaled",
-        "voltage12.raw": "Voltage 12 raw",
-        "voltage12.scaled": "Voltage 12 scaled"
       }
-    }
+    },
+"20":{"displayName":"Pcc"}
   }
 }

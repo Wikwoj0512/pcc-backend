@@ -17,9 +17,7 @@ class ProfilesHandler:
 
     def add_value(self, origin, field, value):
         field_name = get_field_name(origin, field)
-
         entities = self.values.get(field_name)
-
         if entities is None:
             return
 
@@ -32,7 +30,6 @@ class ProfilesHandler:
             emit_data = []
             for element in self.values.values():
                 emit_data.extend(element)
-
             self.socketio.emit(f'profiles/{self.profile_id}', emit_data)
         self.should_be_emited = False
 

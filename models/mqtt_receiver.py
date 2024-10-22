@@ -167,7 +167,7 @@ class MqttReceiver:
             self.raw_values[origin] = current_origin_value
             if self.profiles_handlers is not None:
                 for handler in self.profiles_handlers:
-                    handler.emit_new()
+                    handler.emit(new=True)
         except Exception as e:
             print(f"unsupported message: {e}")
 

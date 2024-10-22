@@ -1,7 +1,7 @@
 [
   {
-    "id": "engine-test",
-    "displayName": "Test silnika",
+    "id": "test",
+    "displayName": "Test",
     "svg": "engine_test.svg"
   }
 ]
