@@ -1,4 +1,6 @@
 import json
+import os
+import signal
 import threading
 import time
 from copy import deepcopy
@@ -56,10 +58,9 @@ class MqttReceiver:
 
         self.socketio = socketio
         if self.profiles_config:
-            try:
-                self.profiles_handlers = ProfilesHandler.get_from_config(self.profiles_config, socketio)
-            except Exception as e:
-                print(f'failed to create profiles handler: {e}')
+
+            self.profiles_handlers = ProfilesHandler.get_handlers(self.profiles_config, socketio)
+
 
         while self.running:
 

@@ -1,4 +1,6 @@
 import json
+import os
+import signal
 
 
 def get_field_name(origin, field):
@@ -34,11 +36,28 @@ class ProfilesHandler:
         self.should_be_emited = False
 
     @classmethod
-    def get_from_config(cls, config_filename, socketio):
+    def get_from_config(cls, config_filename, socketio, profile_handlers=None):
+
+        print(f"reading profiles config {config_filename}")
         with open(config_filename) as profiles_config:
             config = json.loads(profiles_config.read())
 
-        profile_handlers = {}
+        imports = config.pop('imports', [])
+
+        for filename in imports:
+            if not os.path.isfile(filename):
+                print(f"import {filename} in cofig {config_filename} not found, quitting")
+                os.kill(os.getpid(), signal.SIGINT)
+                return
+
+            if filename==config_filename:
+                print(f"infinite import {filename} found, quitting")
+                os.kill(os.getpid(), signal.SIGINT)
+                return
+            profile_handlers = cls.get_from_config(filename, socketio, profile_handlers)
+        if profile_handlers is None:
+            profile_handlers = {}
+
         for origin_name, fields in config.items():
             if not isinstance(fields, dict):
                 raise ChildProcessError(
@@ -59,4 +78,16 @@ class ProfilesHandler:
 
                     profile_handler.add_entities(get_field_name(origin_name, field_name), info)
                     profile_handlers[profile_name] = profile_handler
-        return list(profile_handlers.values())
+
+        return profile_handlers
+
+
+    @classmethod
+    def get_handlers(cls, initial_config_filename, socketio):
+        try:
+            handlers = cls.get_from_config(initial_config_filename, socketio)
+            return list(handlers.values())
+        except Exception as e:
+            print(f'failed to create profiles handler: {e}, quitting')
+            os.kill(os.getpid(), signal.SIGINT)
+            return []
