@@ -3,5 +3,10 @@
     "id": "test",
     "displayName": "Test",
     "svg": "engine_test.svg"
+  },
+  {
+    "id": "bi-liquid",
+    "displayName": "BiLiquid",
+    "svg": "BiLiquidSchematic.svg"
   }
 ]

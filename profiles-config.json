@@ -1,7 +1,4 @@
 {
-  "imports": [
-    "profiles/test_config.json"
-  ],
   "20": {
     "cpuTemperature.value": {
       "test": {
