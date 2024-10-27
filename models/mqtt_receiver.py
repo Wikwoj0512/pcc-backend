@@ -151,8 +151,8 @@ class MqttReceiver:
                     continue
 
                 self.check_origin(origin, key)
-
-                self.data[origin][key].append(DataPoint(timestamp, value))
+                if isinstance(value, int) or isinstance(value, float):
+                    self.data[origin][key].append(DataPoint(timestamp, value))
                 current_origin_value['keys'][key] = {'value': value}
 
                 message_keys.append(key)

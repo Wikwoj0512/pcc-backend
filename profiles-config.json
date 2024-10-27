@@ -1,4 +1,5 @@
 {
+  "imports":["profiles/biliquid.json"],
   "20": {
     "cpuTemperature.value": {
       "test": {
