@@ -1,15 +1,13 @@
 import json
-import os
-import signal
 import threading
 import time
 from copy import deepcopy
 
 import requests
-from flask import logging
 from flask_socketio import SocketIO
 
 import paho.mqtt.client as mqtt
+from time import perf_counter
 
 from .profiles_handler import ProfilesHandler
 from .session import Session
@@ -37,6 +35,7 @@ class MqttReceiver:
         self.client.connect(host, port)
 
         self.socketio = None
+        self.last_message_times = dict()
 
         self.data = {}
         self.locations = {}
@@ -58,9 +57,7 @@ class MqttReceiver:
 
         self.socketio = socketio
         if self.profiles_config:
-
             self.profiles_handlers = ProfilesHandler.get_handlers(self.profiles_config, socketio)
-
 
         while self.running:
 
@@ -119,10 +116,15 @@ class MqttReceiver:
             if not header:
                 return
             origin = header.get('origin')
+            origin = str(origin)
 
+            last_message_time = self.last_message_times.get(origin, 0)
+            if perf_counter() - 0.1 < last_message_time :
+                return
+
+            last_message_time[origin] = perf_counter()
             data = message.get('data')
             if data is None or origin is None: return
-            origin = str(origin)
 
             timestamp = header.get('timestamp')
             if not timestamp: return
