@@ -122,7 +122,7 @@ class MqttReceiver:
             if perf_counter() - 0.1 < last_message_time :
                 return
 
-            last_message_time[origin] = perf_counter()
+            self.last_message_times[origin] = perf_counter()
             data = message.get('data')
             if data is None or origin is None: return
 
