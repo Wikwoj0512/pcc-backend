@@ -14,6 +14,23 @@
                     }
                 ]
             }
+        },
+        "switches.value": {
+            "bi-liquid": [
+                {
+                    "id": "camera-gse-off-btn-1",
+                    "modifiers": [
+                        {
+                            "name": "highlightIfBitEq",
+                            "args": [
+                                3,
+                                true,
+                                "#00ff00"
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     },
     "31": {
@@ -133,7 +150,7 @@
                     ]
                 },
                 {
-                    "id": "N2O_valve-on-btn_1_",
+                    "id": "N2O_valve-off-btn_1_",
                     "modifiers": [
                         {
                             "name": "highlightIfBitEq",
@@ -334,7 +351,7 @@
         "cpu_temperature.value": {
             "bi-liquid": {
                 "id": "lpb-temperature_2_",
-                "format": "%.2f °C",
+                "format": "%.0f °C",
                 "modifiers": [
                     {
                         "name": "highlightIfMT",
@@ -414,40 +431,40 @@
         },
         "ack.ack2": {
             "bi-liquid": [
-                  {
+                {
                     "id": "lpb-save-on-btn_1_",
                     "modifiers": [
-                      {
-                        "name": "highlightIfBitEq",
-                        "args": [
-                          4,
-                          true,
-                          "green"
-                        ]
-                      }
+                        {
+                            "name": "highlightIfBitEq",
+                            "args": [
+                                4,
+                                true,
+                                "green"
+                            ]
+                        }
                     ]
-                  },
-                  {
+                },
+                {
                     "id": "lpb-save-off-btn_1_",
                     "modifiers": [
-                      {
-                        "name": "highlightIfBitEq",
-                        "args": [
-                          4,
-                          false,
-                          "red"
-                        ]
-                      }
+                        {
+                            "name": "highlightIfBitEq",
+                            "args": [
+                                4,
+                                false,
+                                "red"
+                            ]
+                        }
                     ]
-                  }
+                }
             ]
         }
     },
     "20": {
-        "cpuTemperature.value": {
+        "cpu_temperature.value": {
             "bi-liquid": {
-                "id": "pcc-temperature_2_",
-                "format": "%.2f °C",
+                "id": "pcc-temperature",
+                "format": "%.0f °C",
                 "modifiers": [
                     {
                         "name": "highlightIfMT",

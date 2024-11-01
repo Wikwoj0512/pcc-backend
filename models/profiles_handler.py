@@ -1,7 +1,6 @@
 import json
 import os
 import signal
-import time
 
 
 def get_field_name(origin, field):
@@ -14,7 +13,6 @@ class ProfilesHandler:
         self.values = {}
         self.socketio = socketio
         self.should_be_emited = False
-        self.last_send = time.perf_counter()
 
     def add_entities(self, field, info):
         self.values[field] = [{**element, "value": None} for element in info]
@@ -31,9 +29,6 @@ class ProfilesHandler:
 
     def emit(self, new: bool = False):
         if not new or self.should_be_emited:
-
-            if self.should_be_emited and time.perf_counter() - self.last_send < 0.25:
-                return
             emit_data = []
             for element in self.values.values():
                 emit_data.extend(element)
@@ -55,7 +50,7 @@ class ProfilesHandler:
                 os.kill(os.getpid(), signal.SIGINT)
                 return
 
-            if filename == config_filename:
+            if filename==config_filename:
                 print(f"infinite import {filename} found, quitting")
                 os.kill(os.getpid(), signal.SIGINT)
                 return
@@ -85,6 +80,7 @@ class ProfilesHandler:
                     profile_handlers[profile_name] = profile_handler
 
         return profile_handlers
+
 
     @classmethod
     def get_handlers(cls, initial_config_filename, socketio):
